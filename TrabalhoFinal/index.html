@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+    <title>PinkShelf | Sistema de Controle de Estoque</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <!--MENU-->
+    <header class="topo">
+        <img src="images/img00.png" alt="Pinkshelf" class="logo">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pages/estoque.html">Estoque</a></li>
+                <li><a href="pages/catalogo.html">Catálogo</a></li>
+                <li><a href="pages/cadastro.html">Cadastro</a></li>
+                <li><a href="pages/localizacao.html">Localização</a></li>
+                <li><a href="pages/promocao.html">Promoções</a></li>
+                <li><a href="pages/calculo.html">Cálculo</a></li>
+                <li><a href="pages/sobre.html">Sobre</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <!--CARROSSEL-->
+    <section class="carrossel">
+        <div class="slide ativo">
+            <img src="images/img1 (2).png" alt="Roupa feminina em destaque">
+        </div>
+        <div class="slide">
+            <img src="images/img2.png" alt="Arara de roupas organizadas">
+        </div>
+        <div class="slide">
+            <img src="images/img3.png" alt="Imagem celular com o sistema PinkShelf aberto">
+        </div>
+    </section>
+
+  
+ <!-- SOBRE O SISTEMA -->
+    <section class="sobre-box">
+        <h2>Sobre o sistema</h2>
+        <p>
+            O PinkShelf é um sistema desenvolvido para auxiliar lojas de roupas no controle de estoque,
+            organização de produtos e gestão de vendas. Com ele, é possível visualizar produtos,
+            cadastrar novas peças e acompanhar o fluxo do estoque de forma simples e eficiente.
+        </p>
+    </section>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+        <p>© 2026 - Projeto Acadêmico | PinkShelf</p>
+    </footer>
+
+    <!-- FUNÇÃO DO CARROSSEL -->
+    <script>
+        let slideAtual = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function mostrarSlide() {
+            slides.forEach(function (slide) {
+                slide.classList.remove("ativo");
+            });
+
+            slideAtual++;
+
+            if (slideAtual >= slides.length) {
+                slideAtual = 0;
+            }
+
+            slides[slideAtual].classList.add("ativo");
+        }
+
+        setInterval(mostrarSlide, 3000);
+    </script>
+
+</body>
+
+</html>
