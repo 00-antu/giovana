@@ -1,6 +1,9 @@
 /* COR GERAL DA PÁGINA */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+* {
+    font-family: 'Pacifico', cursive;
+}
 
 body {
     margin: 0;
@@ -142,8 +145,9 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
 /* SOBRE */
-.sobre{
+.sobre {
     background-color: #f8f8f8;
     padding: 80px 20px;
     display: flex;
@@ -151,68 +155,75 @@ footer {
 }
 
 
-.sobre{
+.sobre {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 80px 20px;
 }
+
 /* CAIXA DO SOBRE */
-.sobre-box{
+.sobre-box {
     background-color: white;
     max-width: 900px;
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin: auto;
     width: 100%;
-    max-width: 900px; 
+    max-width: 900px;
 }
 
-.sobre-box h2{
+.sobre-box h2 {
     font-size: 30px;
     margin-bottom: 20px;
     color: #111;
 }
 
-.sobre-box p{
+.sobre-box p {
     font-size: 18px;
     color: #555;
     line-height: 1.8;
 }
-.localizacao{
+
+.localizacao {
     background-color: #ffe6ee;
     text-align: center;
 }
-.localizacao h2{
-    font-family:'Pacifico', cursive;
+
+.localizacao h2 {
+    font-family: 'Pacifico', cursive;
     color: #d14d8b;
     margin-top: 30px;
     font-size: 45px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
-.localizacao iframe{
+
+.localizacao iframe {
     width: 80%;
     height: 450px;
     border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-.localizacao  p{
+
+.localizacao p {
     font-size: 18px;
     color: #d14d8b;
     line-height: 1.8;
     margin-top: 20px;
 }
-.topo{
-background-color: #ffd6e8;
-height: 170px;
-position: relative;
+
+.topo {
+    background-color: #ffd6e8;
+    height: 170px;
+    position: relative;
 
 }
-.logo{
+
+.logo {
     width: 340px;
-    
+
     position: absolute;
     left: 50%;
     top: -35px;
@@ -221,3 +232,325 @@ position: relative;
     pointer-events: none;
 }
 
+.pagina-sobre {
+    background-color: #fff4f8;
+    color: #5a2a3c;
+    font-family: Arial, sans-serif;
+}
+
+.pagina-sobre main {
+    width: 100%;
+}
+
+.pagina-sobre header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 34px;
+    color: #9b2f5f;
+}
+
+.pagina-sobre header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* QUEM SOMOS */
+.pagina-sobre .sobre {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pagina-sobre .texto {
+    width: 50%;
+}
+
+.pagina-sobre .sobre h2,
+.pagina-sobre .diferenciais h2,
+.pagina-sobre .frase-final h2 {
+    font-family: 'Pacifico', cursive;
+    color: #b43b6f;
+}
+
+.pagina-sobre .sobre h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.pagina-sobre .sobre p {
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.pagina-sobre .sobre img {
+    width: 420px;
+    border-radius: 25px;
+}
+
+/* CARDS */
+.pagina-sobre .cards {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto 70px auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pagina-sobre .card {
+    background-color: white;
+    width: 300px;
+    min-height: 170px;
+    padding: 30px 25px;
+    border-radius: 22px;
+    box-shadow: 0 6px 18px rgba(180, 59, 111, 0.18);
+    text-align: center;
+}
+
+.pagina-sobre .card h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: #b43b6f;
+    margin-bottom: 12px;
+}
+
+.pagina-sobre .card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* DIFERENCIAIS */
+.pagina-sobre .diferenciais {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 70px auto;
+    background-color: #ffe0ec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 40px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.pagina-sobre .diferenciais h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: #b43b6f;
+
+    margin-bottom: 35px;
+    line-height: 1.2;
+}
+
+.pagina-sobre .diferenciais ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pagina-sobre .diferenciais li {
+    font-size: 20px;
+    margin: 18px 0;
+    line-height: 1.5;
+
+    list-style: none;
+}
+
+/* FRASE FINAL */
+.pagina-sobre .frase-final {
+    text-align: center;
+    padding: 40px 20px 70px;
+}
+
+.sobre .frase-final h2 {
+    font-size: 34px;
+}
+
+.lista-diferenciais {
+    padding: 0;
+    margin: 0;
+}
+
+.pagina-sobre .criadoras {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto 70px auto;
+
+    text-align: center;
+}
+
+.pagina-sobre .criadoras h2 {
+    font-family: 'Pacifico', cursive;
+
+    font-size: 45px;
+
+    color: #b43b6f;
+
+    margin-bottom: 40px;
+}
+
+.pagina-sobre .grupo-criadoras {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    flex-wrap: wrap;
+}
+
+.pagina-sobre .criadora {
+    background-color: white;
+
+    width: 280px;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 6px 18px rgba(180, 59, 111, 0.15);
+}
+
+.pagina-sobre .criadora img {
+    width: 180px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #f7b6cc;
+
+    margin-bottom: 20px;
+}
+
+.pagina-sobre .criadora h3 {
+    font-family: 'Pacifico', cursive;
+
+    color: #b43b6f;
+
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+.pagina-sobre .criadora p {
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f8d7e3;
+    margin: 0;
+    padding: 0;
+
+}
+
+.faixa-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f8d7e3;
+    padding: 0;
+    text-align: center;
+    padding-top: 0;
+}
+
+.menu-paginas {
+    margin-bottom: 45px;
+    position: static;
+    margin-top: -50px;
+}
+
+.menu-paginas a {
+    text-decoration: none;
+    color: #9b2d61;
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    border: none;
+    background: none;
+}
+
+
+.menu-paginas a:hover {
+    color: #d94f95;
+}
+
+.menu-paginas ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    list-style: none;
+    padding: 0;
+    margin-top: -35px;
+
+}
+
+.faixa-menu h1 {
+    color: #9b2d61;
+    font-family: 'Pacifico', cursive;
+    font-size: 55px;
+    margin: 0 0 10px 0;
+    margin-top: 60px !important;
+}
+
+.faixa-menu p {
+    color: #9b2d61;
+    font-size: 20px;
+    margin: 0;
+}
+
+header h1 {
+    color: #9b2d61;
+    font-size: 55px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    position: static;
+    margin: 0 0 15px 0;
+}
+
+header p {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .pagina-sobre .sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pagina-sobre .texto {
+        width: 100%;
+    }
+
+    .pagina-sobre .sobre img {
+        width: 90%;
+    }
+
+    .pagina-sobre header h1 {
+        font-size: 38px;
+    }
+}
+
+header h1 {
+    display: block !important;
+    position: static !important;
+    margin-top: 40px !important;
+    margin-bottom: 10px !important;
+    transform: none !important;
+}
