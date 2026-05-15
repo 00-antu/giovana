@@ -1,8 +1,8 @@
 /* COR GERAL DA PÁGINA */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-* {
-    font-family: 'Pacifico', cursive;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -547,10 +547,521 @@ header p {
     }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUNDO */
+
+body {
+    background-color: #fff7fb;
+}
+
+/* MENU */
+
+.menu-paginas {
+    background-color: #f3d2de;
+
+    padding: 22px 0 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-paginas ul {
+    display: flex;
+
+    gap: 35px;
+
+    list-style: none;
+}
+
+.menu-paginas a {
+    text-decoration: none;
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 20px;
+
+    color: #a83263;
+
+    transition: 0.3s;
+}
+
+.menu-paginas a:hover {
+    color: #ff5c9a;
+
+    transform: scale(1.05);
+}
+
+/* PLANOS */
+
+.planos {
+    padding: 70px 40px;
+
+    text-align: center;
+}
+
+/* TITULO */
+
+.planos h1 {
+    font-family: 'Pacifico', cursive;
+
+    color: #a83263;
+
+    font-size: 60px;
+
+    margin-bottom: 15px;
+}
+
+/* SUBTITULO */
+
+.subtitulo {
+    color: #b14d76;
+
+    font-size: 22px;
+
+    margin-bottom: 60px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CARDS */
+
+.cards-planos {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    flex-wrap: wrap;
+}
+
+/* CARD */
+
+.card-plano {
+    background-color: white;
+
+    width: 320px;
+
+    padding: 35px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 6px 20px rgba(201, 79, 124, 0.15);
+
+    transition: 0.3s;
+
+    position: relative;
+}
+
+.card-plano:hover {
+    transform: translateY(-10px);
+}
+
+/* TITULO DOS CARDS */
+
+.card-plano h2 {
+    font-family: 'Pacifico', cursive;
+
+    color: #c94f7c;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+/* PREÇO */
+
+.preco {
+    color: #a83263;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    margin-bottom: 30px;
+}
+
+/* LISTA */
+
+.card-plano ul {
+    list-style: none;
+
+    margin-bottom: 35px;
+}
+
+.card-plano li {
+    margin-bottom: 14px;
+
+    color: #6d4a57;
+
+    font-size: 16px;
+}
+
+.card-plano li::before {
+    content: "✔ ";
+
+    color: #ff5c9a;
+
+    font-weight: bold;
+}
+
+/* BOTÃO */
+
+.card-plano button {
+    background-color: #c94f7c;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 30px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.card-plano button:hover {
+    background-color: #a83263;
+}
+
+/* CARD DESTAQUE */
+
+.destaque {
+    border: 3px solid #f3a6c8;
+
+    transform: scale(1.05);
+}
+
+/* MAIS POPULAR */
+
+.mais-popular {
+    background-color: #ff5c9a;
+
+    color: white;
+
+    padding: 8px 20px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    position: absolute;
+
+    top: -15px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
 header h1 {
     display: block !important;
     position: static !important;
     margin-top: 40px !important;
     margin-bottom: 10px !important;
     transform: none !important;
+}
+
+/* TOPO ROSA */
+
+.topo {
+    background-color: #f3d2de;
+
+    text-align: center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* LOGO */
+
+.logo-topo {
+    height: 120px;
+
+    overflow: hidden;
+}
+
+.logo-topo img {
+    width: 260px;
+
+    margin-top: -40px;
+}
+
+/* MENU */
+
+.menu-paginas {
+    padding-bottom: 15px;
+}
+
+.menu-paginas ul {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    list-style: none;
+
+    flex-wrap: wrap;
+}
+
+.menu-paginas a {
+    text-decoration: none;
+
+    font-family: 'Pacifico', cursive;
+
+    font-size: 20px;
+
+    color: #a83263;
+
+    transition: 0.3s;
+}
+
+.menu-paginas a:hover {
+    color: #ff5c9a;
+}
+
+/* FONTE GERAL */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff7fb;
+}
+
+/* ÁREA DOS SISTEMAS */
+
+.sistemas-planos {
+    padding: 70px 40px;
+}
+
+/* TITULO PRINCIPAL */
+
+.sistemas-planos h1 {
+    text-align: center;
+
+    font-family: 'Pacifico', cursive;
+
+    color: #c94f7c;
+
+    font-size: 60px;
+
+    margin-bottom: 15px;
+}
+
+/* SUBTITULO */
+
+.subtitulo-sistema {
+    text-align: center;
+
+    color: #8a4d65;
+
+    font-size: 18px;
+
+    margin-bottom: 70px;
+}
+
+/* BLOCOS DOS PLANOS */
+
+.bloco-sistema {
+    margin-bottom: 90px;
+}
+
+/* TITULO DOS PLANOS */
+
+.bloco-sistema h2 {
+    text-align: center;
+
+    font-family: 'Pacifico', cursive;
+
+    color: #c94f7c;
+
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+/* DESCRIÇÃO */
+
+.descricao-plano {
+    text-align: center;
+
+    color: #8a4d65;
+
+    font-size: 17px;
+
+    margin-bottom: 35px;
+}
+
+/* CARDS RESUMO */
+
+.resumo-estoque {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 35px;
+}
+
+/* CARD */
+
+.resumo-estoque div {
+    background-color: white;
+
+    width: 230px;
+
+    padding: 24px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    box-shadow: 0 6px 18px rgba(201, 79, 124, 0.15);
+
+    transition: 0.3s;
+}
+
+.resumo-estoque div:hover {
+    transform: translateY(-6px);
+}
+
+/* NUMEROS */
+
+.resumo-estoque h3 {
+    color: #a83263;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+}
+
+/* TEXTO DOS CARDS */
+
+.resumo-estoque p {
+    color: #8a4d65;
+
+    font-size: 15px;
+}
+
+/* TABELA */
+
+.tabela-sistema {
+    width: 95%;
+
+    margin: 0 auto;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: 0 6px 20px rgba(201, 79, 124, 0.15);
+}
+
+/* CABEÇALHO */
+
+.tabela-sistema th {
+    background-color: #f3d2de;
+
+    color: #a83263;
+
+    padding: 18px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+/* DADOS */
+
+.tabela-sistema td {
+    padding: 16px;
+
+    border-bottom: 1px solid #f3d2de;
+
+    color: #6d4a57;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+/* HOVER */
+
+.tabela-sistema tr:hover {
+    background-color: #fff0f6;
+}
+
+/* STATUS */
+
+.status {
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+/* STATUS CORES */
+
+.disponivel {
+    background-color: #e6f8ec;
+    color: #2d8a4d;
+}
+
+.baixo {
+    background-color: #fff4d6;
+    color: #b87900;
+}
+
+.esgotado {
+    background-color: #ffe0e0;
+    color: #b83232;
+}
+
+/* BOTÃO */
+
+.btn-tabela {
+    background-color: #c94f7c;
+
+    color: white;
+
+    border: none;
+
+    padding: 9px 18px;
+
+    border-radius: 18px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.btn-tabela:hover {
+    background-color: #a83263;
 }
