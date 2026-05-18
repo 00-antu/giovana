@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Relatório Mensal | PinkShelf</title>
+
+    <!-- CSS PRINCIPAL DO SITE -->
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+<header class="topo">
+
+        <!-- LOGO -->
+
+        <div class="logo-topo">
+            <img src="../images/img00.png.png" alt="Logo PinkShelf">
+        </div>
+
+        <!-- MENU -->
+
+        <header class="menu-paginas">
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="estoque.html">Estoque</a></li>
+                    <li><a href="nossosplanos.html">Nossos Planos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="localizacao.html">Localização</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="relatorio.html">Relatório</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+
+        </header>
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA DE RELATÓRIO -->
+    <main class="relatorio-mensal">
+
+        <!-- TÍTULO DA PÁGINA -->
+        <section class="titulo-relatorio">
+            <h1>Gerador de Relatório Mensal</h1>
+
+            <p>
+                Informe os dados do seu cadastro, selecione o plano contratado
+                e escolha o mês desejado para gerar o relatório do estoque.
+            </p>
+        </section>
+
+
+        <!-- FORMULÁRIO PARA GERAR O RELATÓRIO -->
+        <section class="area-formulario-relatorio">
+
+            <h2>Dados para emissão do relatório</h2>
+
+            <form class="formulario-relatorio">
+
+                <!-- CAMPO NOME DA LOJA -->
+                <div class="campo-relatorio">
+                    <label for="loja">Nome da loja</label>
+                    <input type="text" id="loja" placeholder="Ex: Pink Store">
+                </div>
+
+
+                <!-- CAMPO RESPONSÁVEL -->
+                <div class="campo-relatorio">
+                    <label for="responsavel">Responsável</label>
+                    <input type="text" id="responsavel" placeholder="Ex: Maria Cecília">
+                </div>
+
+
+                <!-- CAMPO E-MAIL -->
+                <div class="campo-relatorio">
+                    <label for="email">E-mail cadastrado</label>
+                    <input type="email" id="email" placeholder="Ex: contato@email.com">
+                </div>
+
+
+                <!-- SELEÇÃO DO PLANO -->
+                <div class="campo-relatorio">
+                    <label for="plano">Plano contratado</label>
+
+                    <select id="plano">
+                        <option value="">Selecione o plano</option>
+                        <option value="basico">Plano Básico</option>
+                        <option value="premium">Plano Premium</option>
+                        <option value="enterprise">Plano Enterprise</option>
+                    </select>
+                </div>
+
+
+                <!-- SELEÇÃO DO MÊS -->
+                <div class="campo-relatorio">
+                    <label for="mes">Mês do relatório</label>
+
+                    <select id="mes">
+                        <option value="">Selecione o mês</option>
+                        <option>Janeiro</option>
+                        <option>Fevereiro</option>
+                        <option>Março</option>
+                        <option>Abril</option>
+                        <option>Maio</option>
+                        <option>Junho</option>
+                        <option>Julho</option>
+                        <option>Agosto</option>
+                        <option>Setembro</option>
+                        <option>Outubro</option>
+                        <option>Novembro</option>
+                        <option>Dezembro</option>
+                    </select>
+                </div>
+
+
+                <!-- BOTÃO PARA GERAR RELATÓRIO -->
+                <button type="button" class="botao-gerar">
+                    Gerar relatório
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ÁREA QUE MOSTRA O QUE CADA PLANO ENTREGA -->
+        <section class="planos-relatorio">
+
+            <h2>Tipos de relatório disponíveis</h2>
+
+            <div class="cards-planos-relatorio">
+
+                <!-- PLANO BÁSICO -->
+                <div class="card-plano-relatorio basico">
+                    <h3>Plano Básico</h3>
+
+                    <p>
+                        Relatório simples para acompanhar as principais informações
+                        do estoque.
+                    </p>
+
+                    <ul>
+                        <li>Total de peças vendidas</li>
+                        <li>Peça mais vendida</li>
+                        <li>Total vendido no mês</li>
+                    </ul>
+                </div>
+
+
+                <!-- PLANO PREMIUM -->
+                <div class="card-plano-relatorio premium">
+                    <h3>Plano Premium</h3>
+
+                    <p>
+                        Relatório mais completo para analisar melhor as vendas
+                        e o comportamento do estoque.
+                    </p>
+
+                    <ul>
+                        <li>Tudo do plano básico</li>
+                        <li>Dia com mais vendas</li>
+                        <li>Categoria mais vendida</li>
+                        <li>Ticket médio</li>
+                    </ul>
+                </div>
+
+
+                <!-- PLANO ENTERPRISE -->
+                <div class="card-plano-relatorio enterprise">
+                    <h3>Plano Pink Elite</h3>
+
+                    <p>
+                        Relatório avançado para empresas que precisam de uma análise
+                        mais detalhada.
+                    </p>
+
+                    <ul>
+                        <li>Tudo do plano premium</li>
+                        <li>Comparação entre meses</li>
+                        <li>Produtos com baixa saída</li>
+                        <li>Previsão de reposição</li>
+                        <li>Gráficos de desempenho</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRÉVIA DO RELATÓRIO GERADO -->
+        <section class="previa-relatorio">
+
+            <h2>Prévia do relatório</h2>
+
+            <p>
+                Após preencher os dados e clicar em gerar relatório, o sistema exibirá
+                as informações correspondentes ao plano escolhido e ao mês selecionado.
+            </p>
+
+            <div class="caixa-previa-relatorio">
+
+                <h3>Relatório ainda não gerado</h3>
+
+                <p>
+                    Preencha o formulário acima para visualizar os resultados do relatório mensal.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- RODAPÉ DA PÁGINA -->
+        <footer>
+            <p>© 2026 - PinkShelf | Sistema de Controle de Estoque</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>

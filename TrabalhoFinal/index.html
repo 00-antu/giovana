@@ -20,11 +20,11 @@
                 <li><a href="pages/nossosplanos.html">Nossos Planos</a></li>
                 <li><a href="pages/cadastro.html">Cadastro</a></li>
                 <li><a href="pages/localizacao.html">Localização</a></li>
-                <li><a href="pages/promocao.html">Promoções</a></li>
-                <li><a href="pages/calculo.html">Cálculo</a></li>
+                <li><a href="pages/suporte.html">Suportes</a></li>
+                <li><a href="pages/relatorio.html">Relatório</a></li>
                 <li><a href="pages/sobre.html">Sobre</a></li>
             </ul>
-        </nav> 
+        </nav>
     </header>
     <!--CARROSSEL-->
     <section class="carrossel">
@@ -38,23 +38,241 @@
             <img src="images/img3.png" alt="Imagem celular com o sistema PinkShelf aberto">
         </div>
     </section>
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA INICIAL -->
+    <main class="conteudo-home">
 
-  
- <!-- SOBRE O SISTEMA -->
-    <section class="sobre-box">
-        <h2>Sobre o sistema</h2>
-        <p>
-            O PinkShelf é um sistema desenvolvido para auxiliar lojas de roupas no controle de estoque,
-            organização de produtos e gestão de vendas. Com ele, é possível visualizar produtos,
-            cadastrar novas peças e acompanhar o fluxo do estoque de forma simples e eficiente.
-        </p>
-    </section>
+        <!-- ÁREA DE CADASTRO DA LOJA -->
+        <section class="cadastro-loja-home">
 
-    <!-- RODAPÉ -->
+            <div class="texto-cadastro-home">
+                <h1>Comece a organizar seu estoque</h1>
+                <p>
+                    Cadastre sua loja, escolha o plano ideal e tenha acesso ao sistema
+                    PinkShelf para controlar peças, vendas, estoque e relatórios.
+                </p>
+            </div>
 
-    <footer>
-        <p>© 2026 - Projeto Acadêmico | PinkShelf</p>
-    </footer>
+            <form class="form-cadastro-home">
+
+                <h2>Crie sua conta</h2>
+
+                <div class="campo-home">
+                    <label for="loja">Nome da loja</label>
+                    <input type="text" id="loja" placeholder="Ex: Pink Store">
+                </div>
+
+                <div class="campo-home">
+                    <label for="responsavel">Responsável</label>
+                    <input type="text" id="responsavel" placeholder="Ex: Maria Cecília">
+                </div>
+
+                <div class="campo-home">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Ex: contato@email.com">
+                </div>
+
+                <div class="campo-home">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" placeholder="Ex: (31) 99999-9999">
+                </div>
+
+                <div class="campo-home">
+                    <label for="plano">Plano desejado</label>
+                    <select id="plano">
+                        <option>Selecione o plano</option>
+                        <option>Plano Básico</option>
+                        <option>Plano Premium</option>
+                        <option>Plano Enterprise</option>
+                    </select>
+                </div>
+
+                <div class="campo-home">
+                    <label for="pagamento">Forma de pagamento</label>
+                    <select id="pagamento">
+                        <option>Selecione a forma de pagamento</option>
+                        <option>Pix</option>
+                        <option>Cartão de crédito</option>
+                        <option>Boleto</option>
+                    </select>
+                </div>
+
+                <div class="campo-home">
+                    <label for="senha">Criar senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha">
+                </div>
+
+                <div class="campo-home">
+                    <label for="confirmar-senha">Confirmar senha</label>
+                    <input type="password" id="confirmar-senha" placeholder="Confirme sua senha">
+                </div>
+
+                <button type="button" class="botao-cadastro-home">
+                    Criar conta
+                </button>
+                <!-- ÁREA DE LOGIN -->
+                <div class="login-home">
+
+                    <p>Já possui cadastro?</p>
+
+                    <a href="pages/login.html">
+                        Entrar no sistema
+                    </a>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- APRESENTAÇÃO DO SISTEMA -->
+        <section class="apresentacao">
+
+            <div class="texto-apresentacao">
+                <h2>Seu estoque, sempre organizado</h2>
+
+                <p>
+                    O PinkShelf é um sistema desenvolvido para facilitar o controle de estoque
+                    de lojas de roupas, permitindo cadastrar peças, acompanhar produtos,
+                    organizar categorias e visualizar informações importantes de forma prática.
+                </p>
+
+                <div class="botoes-home">
+                    <a href="pages/cadastro.html">Cadastrar peças</a>
+                    <a href="pages/estoque.html" class="botao-secundario">Ver estoque</a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- FUNCIONALIDADES DO SISTEMA -->
+        <section class="funcionalidades">
+
+            <h2>Funcionalidades do sistema</h2>
+
+            <div class="cards-home">
+
+                <div class="card-home">
+                    <h3>Controle de estoque</h3>
+                    <p>Acompanhe as peças disponíveis e saiba quando repor mercadorias.</p>
+                </div>
+
+                <div class="card-home">
+                    <h3>Cadastro de peças</h3>
+                    <p>Registre roupas, tamanhos, preços e categorias de forma organizada.</p>
+                </div>
+
+                <div class="card-home">
+                    <h3>Catálogo visual</h3>
+                    <p>Visualize os produtos de maneira bonita, prática e intuitiva.</p>
+                </div>
+
+                <div class="card-home">
+                    <h3>Relatórios</h3>
+                    <p>Analise vendas, peças mais vendidas e desempenho mensal.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PLANOS DO SISTEMA -->
+        <section class="planos-home">
+
+            <h2>Escolha o plano ideal para sua loja</h2>
+
+            <div class="cards-planos-home">
+
+                <div class="card-plano-home">
+                    <h3>Plano Básico</h3>
+                    <p>Ideal para pequenas lojas que estão começando.</p>
+                    <ul>
+                        <li>Cadastro de peças</li>
+                        <li>Controle simples de estoque</li>
+                        <li>Relatório básico mensal</li>
+                    </ul>
+                </div>
+
+                <div class="card-plano-home destaque-plano">
+                    <h3>Plano Premium</h3>
+                    <p>Para lojas que precisam acompanhar melhor suas vendas.</p>
+                    <ul>
+                        <li>Tudo do plano básico</li>
+                        <li>Relatórios mais completos</li>
+                        <li>Categoria mais vendida</li>
+                        <li>Dia com mais vendas</li>
+                    </ul>
+                </div>
+
+                <div class="card-plano-home">
+                    <h3>Plano Enterprise</h3>
+                    <p>Para empresas que desejam uma análise mais avançada.</p>
+                    <ul>
+                        <li>Tudo do plano premium</li>
+                        <li>Gráficos de desempenho</li>
+                        <li>Comparação entre meses</li>
+                        <li>Previsão de reposição</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMO FUNCIONA -->
+        <section class="como-funciona">
+
+            <h2>Como funciona</h2>
+
+            <div class="passos">
+
+                <div>
+                    <span>1</span>
+                    <h3>Cadastre sua loja</h3>
+                    <p>Informe seus dados e escolha um plano.</p>
+                </div>
+
+                <div>
+                    <span>2</span>
+                    <h3>Adicione as peças</h3>
+                    <p>Cadastre produtos, preços, tamanhos e categorias.</p>
+                </div>
+
+                <div>
+                    <span>3</span>
+                    <h3>Acompanhe os resultados</h3>
+                    <p>Veja estoque, vendas e relatórios mensais.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJETO ACADÊMICO -->
+        <section class="projeto-academico">
+
+            <h2>Projeto acadêmico</h2>
+
+            <p>
+                Projeto desenvolvido pelas alunas Giovana Azevedo, Maria Cecília e Mariana Fuchs
+                para a disciplina de Introdução à Programação Web, aplicando conhecimentos de
+                HTML, CSS, organização de páginas e estruturação de um site funcional.
+            </p>
+
+        </section>
+
+
+        <!-- RODAPÉ -->
+        <footer>
+            <p>© 2026 - PinkShelf | Sistema de Controle de Estoque</p>
+        </footer>
+
+    </main>
+
 
     <!-- FUNÇÃO DO CARROSSEL -->
     <script>

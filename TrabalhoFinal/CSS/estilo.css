@@ -81,31 +81,641 @@ nav ul li a:hover {
     object-fit: cover;
     display: block;
 }
+/* =============================== */
+/* PÁGINA INICIAL - PINKSHELF */
+/* =============================== */
 
-/* TEXTO EM CIMA DA IMAGEM */
-.slide h2,
-.slide p {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.55);
-    padding: 10px 20px;
-    border-radius: 8px;
-    width: 80%;
+
+/* CONTEÚDO GERAL DA HOME */
+.conteudo-home {
+    background-color: #fff7fb;
+    padding: 40px 8%;
+    font-family: 'Poppins', sans-serif;
+    color: #4a2c36;
 }
 
-.slide h2 {
-    top: 35%;
-    font-size: 35px;
+
+/* =============================== */
+/* CADASTRO DA LOJA NA HOME */
+/* =============================== */
+
+
+/* ÁREA PRINCIPAL DO CADASTRO */
+.cadastro-loja-home {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 35px;
+    align-items: center;
+    background: linear-gradient(135deg, #ffd6e8, #fff0f6);
+    padding: 45px;
+    border-radius: 28px;
+    margin-bottom: 55px;
+    box-shadow: 0 8px 22px rgba(180, 80, 120, 0.15);
 }
 
-.slide p {
-    top: 50%;
+
+/* TEXTO DO LADO ESQUERDO */
+.texto-cadastro-home h1 {
+    color: #b8326f;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+
+/* PARÁGRAFO DO LADO ESQUERDO */
+.texto-cadastro-home p {
     font-size: 18px;
+    line-height: 1.7;
 }
 
+
+/* FORMULÁRIO DE CADASTRO */
+.form-cadastro-home {
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    box-shadow: 0 6px 18px rgba(180, 80, 120, 0.12);
+}
+
+
+/* TÍTULO DO FORMULÁRIO */
+.form-cadastro-home h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #b8326f;
+    margin-bottom: 10px;
+}
+
+
+/* CADA CAMPO DO FORMULÁRIO */
+.campo-home {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* TEXTO ACIMA DOS CAMPOS */
+.campo-home label {
+    color: #b8326f;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+
+/* INPUTS E SELECTS */
+.campo-home input,
+.campo-home select {
+    padding: 12px;
+    border-radius: 15px;
+    border: 2px solid #f3bfd3;
+    outline: none;
+    font-size: 14px;
+}
+
+
+/* EFEITO AO CLICAR NO CAMPO */
+.campo-home input:focus,
+.campo-home select:focus {
+    border-color: #d94f8c;
+    box-shadow: 0 0 8px rgba(217, 79, 140, 0.25);
+}
+
+
+/* BOTÃO DE CRIAR CONTA */
+.botao-cadastro-home {
+    grid-column: 1 / -1;
+    background-color: #d94f8c;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* EFEITO DO BOTÃO */
+.botao-cadastro-home:hover {
+    background-color: #b8326f;
+    transform: scale(1.02);
+}
+
+
+/* =============================== */
+/* APRESENTAÇÃO DO SISTEMA */
+/* =============================== */
+
+.apresentacao {
+    background-color: white;
+    border-radius: 25px;
+    padding: 45px;
+    text-align: center;
+    margin-bottom: 55px;
+    box-shadow: 0 6px 18px rgba(180, 80, 120, 0.12);
+}
+
+
+/* TÍTULO DA APRESENTAÇÃO */
+.texto-apresentacao h2 {
+    font-size: 34px;
+    color: #b8326f;
+    margin-bottom: 15px;
+}
+
+
+/* TEXTO DA APRESENTAÇÃO */
+.texto-apresentacao p {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* BOTÕES DA APRESENTAÇÃO */
+.botoes-home a {
+    display: inline-block;
+    background-color: #d94f8c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 8px;
+    font-weight: bold;
+}
+
+
+/* SEGUNDO BOTÃO */
+.botoes-home .botao-secundario {
+    background-color: white;
+    color: #d94f8c;
+    border: 2px solid #d94f8c;
+}
+
+
+/* =============================== */
+/* FUNCIONALIDADES */
+/* =============================== */
+
+.funcionalidades {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+
+/* TÍTULO DAS FUNCIONALIDADES */
+.funcionalidades h2 {
+    color: #b8326f;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+/* ÁREA DOS CARDS */
+.cards-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+
+/* CARD DE FUNCIONALIDADE */
+.card-home {
+    background-color: white;
+    padding: 25px;
+    border-radius: 22px;
+    box-shadow: 0 6px 18px rgba(180, 80, 120, 0.12);
+    transition: 0.3s;
+}
+
+
+/* EFEITO DOS CARDS */
+.card-home:hover {
+    transform: translateY(-6px);
+}
+
+
+/* TÍTULO DOS CARDS */
+.card-home h3 {
+    color: #d94f8c;
+    margin-bottom: 10px;
+}
+
+
+/* TEXTO DOS CARDS */
+.card-home p {
+    line-height: 1.6;
+}
+
+
+/* =============================== */
+/* PLANOS DA HOME */
+/* =============================== */
+
+.planos-home {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+
+/* TÍTULO DOS PLANOS */
+.planos-home h2 {
+    color: #b8326f;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+/* ÁREA DOS PLANOS */
+.cards-planos-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+
+/* CARD DE CADA PLANO */
+.card-plano-home {
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: left;
+    box-shadow: 0 6px 18px rgba(180, 80, 120, 0.12);
+    border-top: 6px solid #f49ac2;
+}
+
+
+/* PLANO EM DESTAQUE */
+.destaque-plano {
+    background: linear-gradient(135deg, #fff0f6, #ffe3ef);
+    border-top: 6px solid #d94f8c;
+}
+
+
+/* TÍTULO DOS PLANOS */
+.card-plano-home h3 {
+    color: #d94f8c;
+    margin-bottom: 12px;
+}
+
+
+/* TEXTO DOS PLANOS */
+.card-plano-home p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+/* LISTA DOS PLANOS */
+.card-plano-home ul {
+    padding-left: 20px;
+}
+
+
+/* ITENS DA LISTA */
+.card-plano-home li {
+    margin-bottom: 8px;
+}
+
+
+/* =============================== */
+/* COMO FUNCIONA */
+/* =============================== */
+
+.como-funciona {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+
+/* TÍTULO COMO FUNCIONA */
+.como-funciona h2 {
+    color: #b8326f;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+/* ÁREA DOS PASSOS */
+.passos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+
+/* CADA PASSO */
+.passos div {
+    background-color: #ffe3ef;
+    padding: 25px;
+    border-radius: 22px;
+}
+
+
+/* NÚMERO DO PASSO */
+.passos span {
+    background-color: #d94f8c;
+    color: white;
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* TÍTULO DOS PASSOS */
+.passos h3 {
+    color: #b8326f;
+    margin-bottom: 8px;
+}
+
+
+/* =============================== */
+/* PROJETO ACADÊMICO */
+/* =============================== */
+
+.projeto-academico {
+    background-color: white;
+    padding: 35px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 45px;
+    box-shadow: 0 6px 18px rgba(180, 80, 120, 0.12);
+}
+
+
+/* TÍTULO DO PROJETO ACADÊMICO */
+.projeto-academico h2 {
+    color: #b8326f;
+    margin-bottom: 15px;
+}
+
+
+/* TEXTO DO PROJETO ACADÊMICO */
+.projeto-academico p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+/* =============================== */
+/* RODAPÉ */
+/* =============================== */
+
+footer {
+    background-color: #f8c7dc;
+    text-align: center;
+    padding: 18px;
+    border-radius: 20px 20px 0 0;
+    color: #7a294d;
+    font-weight: bold;
+}
+
+
+/* =============================== */
+/* RESPONSIVIDADE */
+/* =============================== */
+
+@media (max-width: 768px) {
+
+    /* DIMINUI O ESPAÇAMENTO DA HOME */
+    .conteudo-home {
+        padding: 25px 5%;
+    }
+
+    /* CADASTRO FICA EM UMA COLUNA NO CELULAR */
+    .cadastro-loja-home {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    /* FORMULÁRIO FICA EM UMA COLUNA */
+    .form-cadastro-home {
+        grid-template-columns: 1fr;
+    }
+
+    /* DIMINUI O TÍTULO */
+    .texto-cadastro-home h1 {
+        font-size: 30px;
+    }
+
+    /* DIMINUI O TÍTULO DA APRESENTAÇÃO */
+    .texto-apresentacao h2 {
+        font-size: 28px;
+    }
+}
+
+/* CONTEÚDO GERAL DA PÁGINA INICIAL */
+.conteudo-home {
+    background-color: #fff7fb;
+    padding: 40px 8%;
+    font-family: 'Poppins', sans-serif;
+    color: #4a2c36;
+}
+
+
+/* SEÇÃO PRINCIPAL DE APRESENTAÇÃO */
+.apresentacao {
+    background: linear-gradient(135deg, #ffd6e8, #fff0f6);
+    border-radius: 25px;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    box-shadow: 0 8px 20px rgba(180, 80, 120, 0.15);
+}
+
+
+/* TÍTULO PRINCIPAL */
+.texto-apresentacao h1 {
+    font-size: 42px;
+    color: #b8326f;
+    margin-bottom: 15px;
+}
+
+
+/* TEXTO DA APRESENTAÇÃO */
+.texto-apresentacao p {
+    font-size: 18px;
+    max-width: 850px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+}
+
+
+/* ÁREA DOS BOTÕES */
+.botoes-home a {
+    display: inline-block;
+    background-color: #d94f8c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE NOS BOTÕES */
+.botoes-home a:hover {
+    background-color: #b8326f;
+    transform: scale(1.05);
+}
+
+
+/* SEGUNDO BOTÃO */
+.botoes-home .botao-secundario {
+    background-color: white;
+    color: #d94f8c;
+    border: 2px solid #d94f8c;
+}
+
+
+/* SEÇÕES DA HOME */
+.sobre-sistema,
+.funcionalidades,
+.como-funciona,
+.projeto-academico {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+/* TÍTULOS DAS SEÇÕES */
+.sobre-sistema h2,
+.funcionalidades h2,
+.como-funciona h2,
+.projeto-academico h2 {
+    color: #b8326f;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* TEXTOS DAS SEÇÕES */
+.sobre-sistema p,
+.projeto-academico p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* ÁREA DOS CARDS */
+.cards-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+
+/* CADA CARD DE FUNCIONALIDADE */
+.card-home {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(180, 80, 120, 0.12);
+    transition: 0.3s;
+}
+
+
+/* EFEITO DO CARD AO PASSAR O MOUSE */
+.card-home:hover {
+    transform: translateY(-6px);
+}
+
+
+/* TÍTULO DOS CARDS */
+.card-home h3 {
+    color: #d94f8c;
+    margin-bottom: 10px;
+}
+
+
+/* TEXTO DOS CARDS */
+.card-home p {
+    line-height: 1.5;
+}
+
+
+/* ÁREA DOS PASSOS */
+.passos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+
+/* CADA PASSO */
+.passos div {
+    background-color: #ffe3ef;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+
+/* NÚMERO DOS PASSOS */
+.passos span {
+    background-color: #d94f8c;
+    color: white;
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* TÍTULO DOS PASSOS */
+.passos h3 {
+    color: #b8326f;
+}
+
+
+/* RODAPÉ */
+footer {
+    background-color: #f8c7dc;
+    text-align: center;
+    padding: 18px;
+    border-radius: 20px 20px 0 0;
+    color: #7a294d;
+    font-weight: bold;
+}
+
+
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 768px) {
+    .conteudo-home {
+        padding: 25px 5%;
+    }
+
+    .apresentacao {
+        padding: 30px 20px;
+    }
+
+    .texto-apresentacao h1 {
+        font-size: 30px;
+    }
+
+    .texto-apresentacao p {
+        font-size: 16px;
+    }
+}s
 /* SEÇÕES */
 section {
     padding: 50px 20px;
@@ -1064,4 +1674,654 @@ body {
 
 .btn-tabela:hover {
     background-color: #a83263;
+}
+/* ---------- PÁGINA SUPORTE ---------- */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff5f9;
+}
+
+/* ---------- ÁREA FORMULÁRIO ---------- */
+
+.contato-suporte {
+    width: 100%;
+    background-color: #fff5f9;
+    display: flex;
+    justify-content: center;
+    padding: 70px 20px;
+}
+
+/* ---------- CAIXA PRINCIPAL ---------- */
+
+.suporte-box {
+    width: 900px;
+    min-height: 430px;
+    background-color: white;
+    display: flex;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(201, 79, 124, 0.18);
+}
+
+/* ---------- LADO ESQUERDO ---------- */
+
+.suporte-formulario {
+    width: 42%;
+    background-color: #f7b8cc;
+    padding: 45px 35px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BOLAS DECORATIVAS */
+
+.suporte-formulario::before {
+    content: "";
+    width: 120px;
+    height: 120px;
+    background-color: #ee9fba;
+    border-radius: 50%;
+    position: absolute;
+    top: -55px;
+    left: -40px;
+}
+
+.suporte-formulario::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    background-color: #ee9fba;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -80px;
+    right: -60px;
+}
+
+/* ---------- TÍTULO ---------- */
+
+.topo-formulario h2 {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 25px;
+    font-family: 'Pacifico', cursive;
+    position: relative;
+    z-index: 1;
+}
+
+/* ESCONDE TEXTO GRANDE */
+
+.texto-suporte {
+    display: none;
+}
+
+/* ---------- CAMPOS ---------- */
+
+.suporte-formulario input,
+.suporte-formulario select,
+.suporte-formulario textarea {
+    width: 85%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+/* ---------- ÁREA DE TEXTO ---------- */
+
+.suporte-formulario textarea {
+    height: 90px;
+    resize: none;
+}
+
+/* ---------- BOTÃO ---------- */
+
+.suporte-formulario button {
+    background-color: #d84f87;
+    color: white;
+    border: none;
+    padding: 11px 35px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.suporte-formulario button:hover {
+    background-color: #bf3f73;
+}
+
+/* ---------- LADO DA FOTO ---------- */
+
+.suporte-imagem {
+    width: 58%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* ---------- FOTO ---------- */
+
+.suporte-imagem img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 18px;
+    display: block;
+}
+
+/* ---------- ÁREA DOS PLANOS ---------- */
+
+.suporte {
+    width: 100%;
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #fff5f9;
+}
+
+/* ---------- TÍTULO ---------- */
+
+.suporte h1 {
+    color: #c94f7c;
+    font-size: 42px;
+    margin-bottom: 12px;
+    font-family: 'Pacifico', cursive;
+}
+
+/* ---------- SUBTÍTULO ---------- */
+
+.subtitulo-suporte {
+    color: #a83f66;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+/* ---------- CARDS ---------- */
+
+.planos-suporte {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 0 auto 60px;
+    max-width: 1100px;
+}
+
+/* ---------- CARD INDIVIDUAL ---------- */
+
+.card-plano {
+    background-color: white;
+    width: 280px;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(201, 79, 124, 0.15);
+    transition: 0.3s;
+}
+
+/* EFEITO */
+
+.card-plano:hover {
+    transform: translateY(-5px);
+}
+
+/* CARD DESTAQUE */
+
+.card-plano.destaque {
+    border: 2px solid #c94f7c;
+}
+
+/* ---------- TÍTULO CARD ---------- */
+
+.card-plano h2 {
+    color: #c94f7c;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: 'Pacifico', cursive;
+}
+
+/* ---------- TEXTO CARD ---------- */
+
+.card-plano p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ---------- ETIQUETA ---------- */
+
+.card-plano span {
+    background-color: #f8d7e3;
+    color: #a83f66;
+    padding: 9px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+/* ---------- FAQ ---------- */
+
+.respostas-prontas h2 {
+    color: #c94f7c;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: 'Pacifico', cursive;
+}
+
+/* ---------- ÁREA FAQ ---------- */
+
+.faq {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* ---------- CAIXAS FAQ ---------- */
+
+.faq details {
+    background-color: white;
+    margin-bottom: 16px;
+    padding: 20px 24px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(201, 79, 124, 0.12);
+}
+
+/* ---------- PERGUNTAS ---------- */
+
+.faq summary {
+    color: #c94f7c;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+/* ---------- RESPOSTAS ---------- */
+
+.faq p {
+    color: #555;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+/* ---------- RESPONSIVO ---------- */
+
+@media (max-width: 900px) {
+
+    .suporte-box {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .suporte-formulario,
+    .suporte-imagem {
+        width: 100%;
+    }
+
+    .suporte-imagem img {
+        max-width: 100%;
+    }
+
+}
+/* ========================================= */
+/* PÁGINA DE RELATÓRIO MENSAL */
+/* ========================================= */
+
+
+/* CONTEÚDO GERAL DA PÁGINA */
+.relatorio-mensal {
+    background-color: #fff7fb;
+    padding: 40px 8%;
+    font-family: 'Poppins', sans-serif;
+    color: #4a2c36;
+}
+
+
+/* ========================================= */
+/* TÍTULO PRINCIPAL */
+/* ========================================= */
+
+.titulo-relatorio {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+/* TÍTULO */
+.titulo-relatorio h1 {
+    color: #b8326f;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+/* TEXTO ABAIXO DO TÍTULO */
+.titulo-relatorio p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+
+/* ========================================= */
+/* ÁREA DO FORMULÁRIO */
+/* ========================================= */
+
+.area-formulario-relatorio {
+    background-color: white;
+    padding: 40px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    box-shadow: 0 6px 18px rgba(180, 80, 120, 0.12);
+}
+
+
+/* TÍTULO DO FORMULÁRIO */
+.area-formulario-relatorio h2 {
+    text-align: center;
+    color: #b8326f;
+    margin-bottom: 35px;
+}
+
+
+/* ORGANIZAÇÃO DOS CAMPOS */
+.formulario-relatorio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+
+/* CADA CAMPO */
+.campo-relatorio {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* TEXO DOS LABELS */
+.campo-relatorio label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #b8326f;
+}
+
+
+/* INPUTS E SELECTS */
+.campo-relatorio input,
+.campo-relatorio select {
+    padding: 13px;
+    border-radius: 15px;
+    border: 2px solid #f3bfd3;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+
+/* EFEITO AO CLICAR NOS CAMPOS */
+.campo-relatorio input:focus,
+.campo-relatorio select:focus {
+    border-color: #d94f8c;
+    box-shadow: 0 0 8px rgba(217, 79, 140, 0.25);
+}
+
+
+/* ========================================= */
+/* BOTÃO GERAR RELATÓRIO */
+/* ========================================= */
+
+.botao-gerar {
+    grid-column: 1 / -1;
+    background-color: #d94f8c;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+.botao-gerar:hover {
+    background-color: #b8326f;
+    transform: scale(1.02);
+}
+
+
+/* ========================================= */
+/* ÁREA DOS PLANOS */
+/* ========================================= */
+
+.planos-relatorio {
+    margin-bottom: 50px;
+}
+
+
+/* TÍTULO DOS PLANOS */
+.planos-relatorio h2 {
+    text-align: center;
+    color: #b8326f;
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+
+/* ÁREA DOS CARDS */
+.cards-planos-relatorio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+
+/* CARD GERAL DOS PLANOS */
+.card-plano-relatorio {
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 6px 18px rgba(180, 80, 120, 0.12);
+    transition: 0.3s;
+}
+
+
+/* EFEITO DOS CARDS */
+.card-plano-relatorio:hover {
+    transform: translateY(-8px);
+}
+
+
+/* TÍTULO DOS CARDS */
+.card-plano-relatorio h3 {
+    margin-bottom: 15px;
+}
+
+
+/* TEXTO DOS CARDS */
+.card-plano-relatorio p {
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+
+/* LISTA DOS BENEFÍCIOS */
+.card-plano-relatorio ul {
+    padding-left: 20px;
+}
+
+
+/* ITENS DA LISTA */
+.card-plano-relatorio li {
+    margin-bottom: 10px;
+}
+
+
+/* ========================================= */
+/* PLANO BÁSICO */
+/* ========================================= */
+
+.basico {
+    border-top: 6px solid #ff9dc5;
+}
+
+.basico h3 {
+    color: #d94f8c;
+}
+
+
+/* ========================================= */
+/* PLANO PREMIUM */
+/* ========================================= */
+
+.premium {
+    border-top: 6px solid #ff69b4;
+    background: linear-gradient(135deg, #fff0f6, #ffe3ef);
+}
+
+.premium h3 {
+    color: #c92c75;
+}
+
+
+/* ========================================= */
+/* PLANO ENTERPRISE */
+/* ========================================= */
+
+.enterprise {
+    border-top: 6px solid #b14cff;
+    background: linear-gradient(135deg, #f7e7ff, #fff1ff);
+}
+
+.enterprise h3 {
+    color: #8d2ce0;
+}
+
+
+/* ========================================= */
+/* ÁREA DE PRÉVIA DO RELATÓRIO */
+/* ========================================= */
+
+.previa-relatorio {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+/* TÍTULO */
+.previa-relatorio h2 {
+    color: #b8326f;
+    margin-bottom: 15px;
+}
+
+
+/* TEXTO */
+.previa-relatorio p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+/* CAIXA DA PRÉVIA */
+.caixa-previa-relatorio {
+    background-color: white;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 25px;
+    border: 3px dashed #f3bfd3;
+    box-shadow: 0 6px 18px rgba(180, 80, 120, 0.10);
+}
+
+
+/* TÍTULO DA PRÉVIA */
+.caixa-previa-relatorio h3 {
+    color: #d94f8c;
+    margin-bottom: 10px;
+}
+
+
+/* ========================================= */
+/* RODAPÉ */
+/* ========================================= */
+
+footer {
+    background-color: #f8c7dc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+    color: #7a294d;
+    font-weight: bold;
+}
+
+
+/* ========================================= */
+/* RESPONSIVIDADE */
+/* ========================================= */
+
+@media (max-width: 768px) {
+
+    /* DIMINUI O ESPAÇAMENTO */
+    .relatorio-mensal {
+        padding: 25px 5%;
+    }
+
+    
+    /* DIMINUI O TÍTULO */
+    .titulo-relatorio h1 {
+        font-size: 30px;
+    }
+
+    
+    /* FORMULÁRIO EM COLUNA */
+    .formulario-relatorio {
+        grid-template-columns: 1fr;
+    }
+
+    
+    /* CARDS EM COLUNA */
+    .cards-planos-relatorio {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ÁREA DE LOGIN */
+.login-home {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* TEXTO */
+.login-home p {
+    color: #7a294d;
+    margin-bottom: 8px;
+}
+
+
+/* LINK DE LOGIN */
+.login-home a {
+    color: #d94f8c;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+/* EFEITO */
+.login-home a:hover {
+    color: #b8326f;
 }
