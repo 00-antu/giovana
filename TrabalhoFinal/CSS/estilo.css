@@ -1972,356 +1972,1511 @@ body {
     }
 
 }
-/* ========================================= */
-/* PÁGINA DE RELATÓRIO MENSAL */
-/* ========================================= */
 
+/* =========================================
+   ÁREA PRINCIPAL DO CADASTRO
+========================================= */
+.cadastro-loja-home{
 
-/* CONTEÚDO GERAL DA PÁGINA */
-.relatorio-mensal {
-    background-color: #fff7fb;
-    padding: 40px 8%;
-    font-family: 'Poppins', sans-serif;
-    color: #4a2c36;
-}
+    /* Espaçamento interno */
+    padding: 70px 8%;
 
+    /* Cor de fundo rosa clarinho */
+    background-color: #fff0f6;
 
-/* ========================================= */
-/* TÍTULO PRINCIPAL */
-/* ========================================= */
-
-.titulo-relatorio {
+    /* Centraliza os textos */
     text-align: center;
-    margin-bottom: 45px;
 }
 
 
-/* TÍTULO */
-.titulo-relatorio h1 {
-    color: #b8326f;
-    font-size: 40px;
-    margin-bottom: 15px;
-}
+/* =========================================
+   BLOCO DE TEXTO
+========================================= */
+.texto-cadastro-home{
 
+    /* Limita a largura */
+    max-width: 750px;
 
-/* TEXTO ABAIXO DO TÍTULO */
-.titulo-relatorio p {
-    max-width: 850px;
+    /* Centraliza a div */
     margin: auto;
-    line-height: 1.7;
-    font-size: 17px;
 }
 
 
-/* ========================================= */
-/* ÁREA DO FORMULÁRIO */
-/* ========================================= */
+/* =========================================
+   TÍTULO PRINCIPAL
+========================================= */
+.texto-cadastro-home h1{
 
-.area-formulario-relatorio {
-    background-color: white;
-    padding: 40px;
-    border-radius: 25px;
-    margin-bottom: 50px;
-    box-shadow: 0 6px 18px rgba(180, 80, 120, 0.12);
+    /* Cor rosa */
+    color: #d94f8f;
+
+    /* Tamanho da fonte */
+    font-size: 42px;
+
+    /* Espaço abaixo do título */
+    margin-bottom: 20px;
 }
 
 
-/* TÍTULO DO FORMULÁRIO */
-.area-formulario-relatorio h2 {
-    text-align: center;
-    color: #b8326f;
-    margin-bottom: 35px;
+/* =========================================
+   PARÁGRAFO
+========================================= */
+.texto-cadastro-home p{
+
+    /* Cor do texto */
+    color: #555;
+
+    /* Tamanho da fonte */
+    font-size: 18px;
+
+    /* Espaço abaixo */
+    margin-bottom: 30px;
 }
 
 
-/* ORGANIZAÇÃO DOS CAMPOS */
-.formulario-relatorio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
+/* =========================================
+   BOTÃO DE CADASTRO
+========================================= */
+.botao-cadastro-home{
 
+    /* Faz o botão funcionar como bloco */
+    display: inline-block;
 
-/* CADA CAMPO */
-.campo-relatorio {
-    display: flex;
-    flex-direction: column;
-}
+    /* Cor de fundo */
+    background-color: #d94f8f;
 
+    /* Cor da letra */
+    color: white;
 
-/* TEXO DOS LABELS */
-.campo-relatorio label {
-    margin-bottom: 8px;
+    /* Remove sublinhado */
+    text-decoration: none;
+
+    /* Espaçamento interno */
+    padding: 16px 40px;
+
+    /* Bordas arredondadas */
+    border-radius: 40px;
+
+    /* Texto em negrito */
     font-weight: bold;
-    color: #b8326f;
-}
 
+    /* Tamanho da fonte */
+    font-size: 18px;
 
-/* INPUTS E SELECTS */
-.campo-relatorio input,
-.campo-relatorio select {
-    padding: 13px;
-    border-radius: 15px;
-    border: 2px solid #f3bfd3;
-    outline: none;
-    font-size: 15px;
+    /* Sombra */
+    box-shadow: 0 8px 18px rgba(217, 79, 143, 0.35);
+
+    /* Animação suave */
     transition: 0.3s;
 }
 
 
-/* EFEITO AO CLICAR NOS CAMPOS */
-.campo-relatorio input:focus,
-.campo-relatorio select:focus {
-    border-color: #d94f8c;
-    box-shadow: 0 0 8px rgba(217, 79, 140, 0.25);
+/* =========================================
+   EFEITO AO PASSAR O MOUSE
+========================================= */
+.botao-cadastro-home:hover{
+
+    /* Cor mais escura */
+    background-color: #c63d7d;
+
+    /* Faz subir levemente */
+    transform: translateY(-3px);
 }
 
 
-/* ========================================= */
-/* BOTÃO GERAR RELATÓRIO */
-/* ========================================= */
+/* =========================================
+   ÁREA DE LOGIN
+========================================= */
+.login-home{
 
-.botao-gerar {
-    grid-column: 1 / -1;
-    background-color: #d94f8c;
+    /* Espaço acima */
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   TEXTO DO LOGIN
+========================================= */
+.login-home p{
+
+    /* Espaço abaixo */
+    margin-bottom: 8px;
+
+    /* Cor */
+    color: #555;
+}
+
+
+/* =========================================
+   LINK DE LOGIN
+========================================= */
+.login-home a{
+
+    /* Cor rosa */
+    color: #d94f8f;
+
+    /* Texto em negrito */
+    font-weight: bold;
+
+    /* Remove sublinhado */
+    text-decoration: none;
+}
+
+
+/* =========================================
+   EFEITO DO LINK
+========================================= */
+.login-home a:hover{
+
+    /* Adiciona sublinhado */
+    text-decoration: underline;
+}
+/* =========================================
+   RESET
+========================================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+body{
+
+    /* Fonte principal */
+    font-family: 'Poppins', sans-serif;
+
+    /* Cor de fundo */
+    background-color: #fff7fa;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+.topo{
+
+    /* Cor de fundo */
+    background-color: #ffd6e5;
+
+    /* Espaçamento */
+    padding: 15px 8%;
+
+    /* Organização */
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+.logo{
+
+    /* Tamanho */
+    width: 170px;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+.menu ul{
+
+    /* Remove bolinhas */
+    list-style: none;
+
+    /* Deixa lado a lado */
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   LINKS DO MENU
+========================================= */
+.menu a{
+
+    /* Remove sublinhado */
+    text-decoration: none;
+
+    /* Cor */
+    color: #d94f8f;
+
+    /* Negrito */
+    font-weight: 600;
+
+    /* Animação */
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   HOVER MENU
+========================================= */
+.menu a:hover{
+
+    /* Cor ao passar o mouse */
+    color: #ff5fa2;
+}
+
+
+/* =========================================
+   ÁREA PRINCIPAL
+========================================= */
+.cadastro{
+
+    /* Organização */
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 60px;
+
+    flex-wrap: wrap;
+
+    /* Espaçamento */
+    padding: 70px 8%;
+}
+
+
+/* =========================================
+   TEXTO DO CADASTRO
+========================================= */
+.texto-cadastro{
+
+    /* Limite */
+    max-width: 500px;
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+.texto-cadastro h1{
+
+    /* Fonte bonita */
+    font-family: 'Pacifico', cursive;
+
+    /* Cor */
+    color: #ff5fa2;
+
+    /* Tamanho */
+    font-size: 55px;
+
+    /* Espaço */
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   PARÁGRAFO
+========================================= */
+.texto-cadastro p{
+
+    /* Cor */
+    color: #666;
+
+    /* Tamanho */
+    font-size: 18px;
+
+    /* Espaçamento */
+    margin-bottom: 30px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   IMAGEM
+========================================= */
+.texto-cadastro img{
+
+    /* Responsiva */
+    width: 100%;
+
+    max-width: 420px;
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+.formulario{
+
+    /* Fundo */
+    background-color: white;
+
+    /* Espaçamento */
+    padding: 40px;
+
+    /* Bordas */
+    border-radius: 30px;
+
+    /* Sombra */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+    /* Tamanho */
+    width: 100%;
+
+    max-width: 500px;
+}
+
+
+/* =========================================
+   TÍTULO DO FORMULÁRIO
+========================================= */
+.formulario h2{
+
+    /* Cor */
+    color: #d94f8f;
+
+    /* Centraliza */
+    text-align: center;
+
+    /* Espaço */
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+.campo{
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+.campo label{
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #555;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   INPUTS E SELECT
+========================================= */
+.campo input,
+.campo select{
+
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    border: 2px solid #f3d1df;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   FOCO DOS CAMPOS
+========================================= */
+.campo input:focus,
+.campo select:focus{
+
+    border-color: #ff5fa2;
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+.botao-cadastro{
+
+    width: 100%;
+
+    background-color: #ff5fa2;
+
+    color: white;
+
+    border: none;
+
+    padding: 16px;
+
+    border-radius: 40px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   HOVER BOTÃO
+========================================= */
+.botao-cadastro:hover{
+
+    background-color: #e0488a;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   LOGIN
+========================================= */
+.login{
+
+    text-align: center;
+
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   TEXTO LOGIN
+========================================= */
+.login p{
+
+    color: #666;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   LINK LOGIN
+========================================= */
+.login a{
+
+    color: #d94f8f;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* =========================================
+   HOVER LOGIN
+========================================= */
+.login a:hover{
+
+    text-decoration: underline;
+}
+/* =========================================
+   RESET
+========================================= */
+*{
+
+    /* Remove margens */
+    margin: 0;
+
+    /* Remove espaçamentos */
+    padding: 0;
+
+    /* Mantém tamanhos organizados */
+    box-sizing: border-box;
+}
+
+
+
+/* =========================================
+   BODY
+========================================= */
+body{
+
+    /* Fonte principal */
+    font-family: 'Poppins', sans-serif;
+
+    /* Cor de fundo */
+    background-color: #fff7fa;
+}
+
+
+
+/* =========================================
+   HEADER
+========================================= */
+.topo{
+
+    /* Cor de fundo rosa */
+    background-color: #ffd6e5;
+
+    /* Espaçamento interno */
+    padding: 15px 8%;
+
+    /* Deixa itens lado a lado */
+    display: flex;
+
+    /* Espaço entre logo e menu */
+    justify-content: space-between;
+
+    /* Centraliza verticalmente */
+    align-items: center;
+
+    /* Permite quebrar linha */
+    flex-wrap: wrap;
+}
+
+
+
+/* =========================================
+   LOGO
+========================================= */
+.logo{
+
+    /* Tamanho da logo */
+    width: 180px;
+}
+
+
+
+/* =========================================
+   MENU
+========================================= */
+.menu ul{
+
+    /* Remove bolinhas */
+    list-style: none;
+
+    /* Deixa itens lado a lado */
+    display: flex;
+
+    /* Espaçamento entre links */
+    gap: 25px;
+
+    /* Permite quebrar linha */
+    flex-wrap: wrap;
+}
+
+
+
+/* =========================================
+   LINKS DO MENU
+========================================= */
+.menu a{
+
+    /* Remove sublinhado */
+    text-decoration: none;
+
+    /* Cor rosa */
+    color: #d94f8f;
+
+    /* Peso da fonte */
+    font-weight: 600;
+
+    /* Animação suave */
+    transition: 0.3s;
+}
+
+
+
+/* =========================================
+   HOVER MENU
+========================================= */
+.menu a:hover{
+
+    /* Cor ao passar mouse */
+    color: #ff5fa2;
+}
+
+
+
+/* =========================================
+   ÁREA PRINCIPAL
+========================================= */
+.area-login{
+
+    /* Altura mínima */
+    min-height: 85vh;
+
+    /* Centraliza conteúdo */
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    /* Espaçamento interno */
+    padding: 60px 8%;
+}
+
+
+
+/* =========================================
+   CAIXA GERAL LOGIN
+========================================= */
+.caixa-login{
+
+    /* Fundo branco */
+    background-color: white;
+
+    /* Largura máxima */
+    max-width: 1050px;
+
+    /* Largura total */
+    width: 100%;
+
+    /* Bordas arredondadas */
+    border-radius: 35px;
+
+    /* Sombra */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    /* Organização lado a lado */
+    display: flex;
+
+    /* Quebra linha em telas menores */
+    flex-wrap: wrap;
+
+    /* Esconde excesso */
+    overflow: hidden;
+}
+
+
+
+/* =========================================
+   TEXTO LOGIN
+========================================= */
+.texto-login{
+
+    /* Ocupa metade */
+    flex: 1;
+
+    /* Fundo rosa */
+    background: linear-gradient(to bottom, #ffe1ec, #ffd3e3);
+
+    /* Espaçamento */
+    padding: 60px;
+
+    /* Centraliza conteúdo */
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    /* Texto centralizado */
+    text-align: center;
+
+    /* Tamanho mínimo */
+    min-width: 320px;
+}
+
+
+
+/* =========================================
+   TÍTULO LOGIN
+========================================= */
+.texto-login h1{
+
+    /* Fonte bonita */
+    font-family: 'Pacifico', cursive;
+
+    /* Cor rosa */
+    color: #ff5fa2;
+
+    /* Tamanho */
+    font-size: 52px;
+
+    /* Espaçamento abaixo */
+    margin-bottom: 20px;
+}
+
+
+
+/* =========================================
+   PARÁGRAFO LOGIN
+========================================= */
+.texto-login p{
+
+    /* Cor do texto */
+    color: #666;
+
+    /* Tamanho */
+    font-size: 17px;
+
+    /* Altura das linhas */
+    line-height: 1.8;
+
+    /* Espaço abaixo */
+    margin-bottom: 35px;
+
+    /* Largura máxima */
+    max-width: 420px;
+}
+
+
+
+/* =========================================
+   IMAGEM LOGIN
+========================================= */
+.texto-login img{
+
+    /* Responsiva */
+    width: 100%;
+
+    /* Tamanho máximo */
+    max-width: 350px;
+}
+
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+.form-login{
+
+    /* Ocupa metade */
+    flex: 1;
+
+    /* Espaçamento interno */
+    padding: 60px;
+
+    /* Tamanho mínimo */
+    min-width: 320px;
+
+    /* Centraliza verticalmente */
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+
+/* =========================================
+   TÍTULO FORMULÁRIO
+========================================= */
+.form-login h2{
+
+    /* Cor rosa */
+    color: #d94f8f;
+
+    /* Centraliza */
+    text-align: center;
+
+    /* Tamanho */
+    font-size: 30px;
+
+    /* Espaço abaixo */
+    margin-bottom: 35px;
+}
+
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+.campo-login{
+
+    /* Espaço abaixo */
+    margin-bottom: 22px;
+}
+
+
+
+/* =========================================
+   LABEL
+========================================= */
+.campo-login label{
+
+    /* Deixa em bloco */
+    display: block;
+
+    /* Espaço abaixo */
+    margin-bottom: 8px;
+
+    /* Cor */
+    color: #555;
+
+    /* Peso */
+    font-weight: 500;
+}
+
+
+
+/* =========================================
+   INPUTS
+========================================= */
+.campo-login input{
+
+    /* Largura total */
+    width: 100%;
+
+    /* Espaçamento interno */
+    padding: 15px;
+
+    /* Bordas arredondadas */
+    border-radius: 14px;
+
+    /* Borda */
+    border: 2px solid #f5d4e2;
+
+    /* Remove borda padrão */
+    outline: none;
+
+    /* Tamanho da fonte */
+    font-size: 15px;
+
+    /* Transição */
+    transition: 0.3s;
+}
+
+
+
+/* =========================================
+   FOCO INPUT
+========================================= */
+.campo-login input:focus{
+
+    /* Cor da borda */
+    border-color: #ff5fa2;
+
+    /* Sombra rosa */
+    box-shadow: 0 0 10px rgba(255,95,162,0.2);
+}
+
+
+
+/* =========================================
+   OPÇÕES LOGIN
+========================================= */
+.opcoes-login{
+
+    /* Organização */
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    /* Espaçamento */
+    margin-bottom: 30px;
+
+    /* Tamanho da fonte */
+    font-size: 14px;
+}
+
+
+
+/* =========================================
+   LABEL OPÇÕES
+========================================= */
+.opcoes-login label{
+
+    /* Cor */
+    color: #666;
+}
+
+
+
+/* =========================================
+   LINK ESQUECI SENHA
+========================================= */
+.opcoes-login a{
+
+    /* Cor rosa */
+    color: #d94f8f;
+
+    /* Remove sublinhado */
+    text-decoration: none;
+
+    /* Negrito */
+    font-weight: 600;
+}
+
+
+
+/* =========================================
+   HOVER LINK
+========================================= */
+.opcoes-login a:hover{
+
+    /* Sublinhado */
+    text-decoration: underline;
+}
+
+
+
+/* =========================================
+   BOTÃO LOGIN
+========================================= */
+.botao-login{
+
+    /* Largura total */
+    width: 100%;
+
+    /* Cor de fundo */
+    background-color: #ff5fa2;
+
+    /* Cor do texto */
+    color: white;
+
+    /* Remove borda */
+    border: none;
+
+    /* Espaçamento */
+    padding: 17px;
+
+    /* Bordas arredondadas */
+    border-radius: 40px;
+
+    /* Tamanho fonte */
+    font-size: 17px;
+
+    /* Negrito */
+    font-weight: bold;
+
+    /* Cursor mão */
+    cursor: pointer;
+
+    /* Transição */
+    transition: 0.3s;
+}
+
+
+
+/* =========================================
+   HOVER BOTÃO
+========================================= */
+.botao-login:hover{
+
+    /* Cor mais escura */
+    background-color: #e0488a;
+
+    /* Levanta botão */
+    transform: translateY(-3px);
+}
+
+
+
+/* =========================================
+   ÁREA CADASTRO
+========================================= */
+.cadastro-link{
+
+    /* Centraliza */
+    text-align: center;
+
+    /* Espaço acima */
+    margin-top: 30px;
+}
+
+
+
+/* =========================================
+   TEXTO CADASTRO
+========================================= */
+.cadastro-link p{
+
+    /* Cor */
+    color: #666;
+
+    /* Espaço abaixo */
+    margin-bottom: 8px;
+}
+
+
+
+/* =========================================
+   LINK CADASTRO
+========================================= */
+.cadastro-link a{
+
+    /* Cor rosa */
+    color: #d94f8f;
+
+    /* Negrito */
+    font-weight: bold;
+
+    /* Remove sublinhado */
+    text-decoration: none;
+}
+
+
+
+/* =========================================
+   HOVER LINK CADASTRO
+========================================= */
+.cadastro-link a:hover{
+
+    /* Sublinhado */
+    text-decoration: underline;
+}
+/* =========================================
+   RESET
+========================================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff7fa;
+}
+
+
+/* =========================================
+   TOPO
+========================================= */
+.topo{
+    background-color: #ffd6e5;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+.logo{
+    width: 180px;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   LINKS DO MENU
+========================================= */
+.menu a{
+    text-decoration: none;
+    color: #d94f8f;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   EFEITO DO MENU
+========================================= */
+.menu a:hover{
+    color: #ff5fa2;
+}
+
+
+/* =========================================
+   CONTEÚDO PRINCIPAL
+========================================= */
+.relatorio{
+    padding: 60px 8%;
+}
+
+
+/* =========================================
+   TÍTULO DO RELATÓRIO
+========================================= */
+.titulo-relatorio{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* =========================================
+   H1 DO RELATÓRIO
+========================================= */
+.titulo-relatorio h1{
+    font-family: 'Pacifico', cursive;
+    color: #ff5fa2;
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   TEXTO DO TÍTULO
+========================================= */
+.titulo-relatorio p{
+    max-width: 800px;
+    margin: auto;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FILTRO DO RELATÓRIO
+========================================= */
+.filtro-relatorio{
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+
+/* =========================================
+   CAMPOS SELECT
+========================================= */
+.filtro-relatorio select{
+    padding: 14px;
+    border-radius: 12px;
+    border: 2px solid #f3d1df;
+    outline: none;
+    color: #555;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   BOTÃO GERAR RELATÓRIO
+========================================= */
+.filtro-relatorio button{
+    background-color: #ff5fa2;
     color: white;
     border: none;
-    padding: 15px;
+    padding: 14px 30px;
     border-radius: 30px;
-    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
 
 
-/* EFEITO AO PASSAR O MOUSE */
-.botao-gerar:hover {
-    background-color: #b8326f;
-    transform: scale(1.02);
+/* =========================================
+   EFEITO DO BOTÃO
+========================================= */
+.filtro-relatorio button:hover{
+    background-color: #e0488a;
+    transform: translateY(-2px);
 }
 
 
-/* ========================================= */
-/* ÁREA DOS PLANOS */
-/* ========================================= */
-
-.planos-relatorio {
+/* =========================================
+   CARDS DE RESUMO
+========================================= */
+.cards-resumo{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
     margin-bottom: 50px;
 }
 
 
-/* TÍTULO DOS PLANOS */
-.planos-relatorio h2 {
-    text-align: center;
-    color: #b8326f;
-    margin-bottom: 35px;
-    font-size: 32px;
-}
-
-
-/* ÁREA DOS CARDS */
-.cards-planos-relatorio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-
-
-/* CARD GERAL DOS PLANOS */
-.card-plano-relatorio {
+/* =========================================
+   CARD DE RESUMO
+========================================= */
+.card-resumo{
     background-color: white;
-    padding: 30px;
+    width: 240px;
+    padding: 25px;
+    text-align: center;
     border-radius: 25px;
-    box-shadow: 0 6px 18px rgba(180, 80, 120, 0.12);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
     transition: 0.3s;
 }
 
 
-/* EFEITO DOS CARDS */
-.card-plano-relatorio:hover {
-    transform: translateY(-8px);
+/* =========================================
+   EFEITO DO CARD
+========================================= */
+.card-resumo:hover{
+    transform: translateY(-5px);
 }
 
 
-/* TÍTULO DOS CARDS */
-.card-plano-relatorio h3 {
-    margin-bottom: 15px;
+/* =========================================
+   TÍTULO DO CARD
+========================================= */
+.card-resumo h3{
+    color: #d94f8f;
+    font-size: 17px;
+    margin-bottom: 12px;
 }
 
 
-/* TEXTO DOS CARDS */
-.card-plano-relatorio p {
-    line-height: 1.6;
-    margin-bottom: 18px;
-}
-
-
-/* LISTA DOS BENEFÍCIOS */
-.card-plano-relatorio ul {
-    padding-left: 20px;
-}
-
-
-/* ITENS DA LISTA */
-.card-plano-relatorio li {
-    margin-bottom: 10px;
-}
-
-
-/* ========================================= */
-/* PLANO BÁSICO */
-/* ========================================= */
-
-.basico {
-    border-top: 6px solid #ff9dc5;
-}
-
-.basico h3 {
-    color: #d94f8c;
-}
-
-
-/* ========================================= */
-/* PLANO PREMIUM */
-/* ========================================= */
-
-.premium {
-    border-top: 6px solid #ff69b4;
-    background: linear-gradient(135deg, #fff0f6, #ffe3ef);
-}
-
-.premium h3 {
-    color: #c92c75;
-}
-
-
-/* ========================================= */
-/* PLANO ENTERPRISE */
-/* ========================================= */
-
-.enterprise {
-    border-top: 6px solid #b14cff;
-    background: linear-gradient(135deg, #f7e7ff, #fff1ff);
-}
-
-.enterprise h3 {
-    color: #8d2ce0;
-}
-
-
-/* ========================================= */
-/* ÁREA DE PRÉVIA DO RELATÓRIO */
-/* ========================================= */
-
-.previa-relatorio {
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-
-/* TÍTULO */
-.previa-relatorio h2 {
-    color: #b8326f;
-    margin-bottom: 15px;
-}
-
-
-/* TEXTO */
-.previa-relatorio p {
-    max-width: 850px;
-    margin: auto;
-    line-height: 1.7;
-}
-
-
-/* CAIXA DA PRÉVIA */
-.caixa-previa-relatorio {
-    background-color: white;
-    margin-top: 30px;
-    padding: 40px;
-    border-radius: 25px;
-    border: 3px dashed #f3bfd3;
-    box-shadow: 0 6px 18px rgba(180, 80, 120, 0.10);
-}
-
-
-/* TÍTULO DA PRÉVIA */
-.caixa-previa-relatorio h3 {
-    color: #d94f8c;
-    margin-bottom: 10px;
-}
-
-
-/* ========================================= */
-/* RODAPÉ */
-/* ========================================= */
-
-footer {
-    background-color: #f8c7dc;
-    padding: 20px;
-    text-align: center;
-    border-radius: 25px 25px 0 0;
-    color: #7a294d;
+/* =========================================
+   VALOR DO CARD
+========================================= */
+.card-resumo p{
+    color: #555;
+    font-size: 28px;
     font-weight: bold;
-}
-
-
-/* ========================================= */
-/* RESPONSIVIDADE */
-/* ========================================= */
-
-@media (max-width: 768px) {
-
-    /* DIMINUI O ESPAÇAMENTO */
-    .relatorio-mensal {
-        padding: 25px 5%;
-    }
-
-    
-    /* DIMINUI O TÍTULO */
-    .titulo-relatorio h1 {
-        font-size: 30px;
-    }
-
-    
-    /* FORMULÁRIO EM COLUNA */
-    .formulario-relatorio {
-        grid-template-columns: 1fr;
-    }
-
-    
-    /* CARDS EM COLUNA */
-    .cards-planos-relatorio {
-        grid-template-columns: 1fr;
-    }
-
-}
-/* ÁREA DE LOGIN */
-.login-home {
-    grid-column: 1 / -1;
-    text-align: center;
-    margin-top: 10px;
-}
-
-
-/* TEXTO */
-.login-home p {
-    color: #7a294d;
     margin-bottom: 8px;
 }
 
 
-/* LINK DE LOGIN */
-.login-home a {
-    color: #d94f8c;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s;
+/* =========================================
+   DESCRIÇÃO DO CARD
+========================================= */
+.card-resumo span{
+    color: #888;
+    font-size: 14px;
 }
 
 
-/* EFEITO */
-.login-home a:hover {
-    color: #b8326f;
+/* =========================================
+   ÁREA DOS GRÁFICOS
+========================================= */
+.area-graficos{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+/* =========================================
+   CARD DOS GRÁFICOS
+========================================= */
+.grafico-card{
+    background-color: white;
+    padding: 35px;
+    border-radius: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+
+/* =========================================
+   TÍTULO DO GRÁFICO
+========================================= */
+.grafico-card h2{
+    color: #d94f8f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   TEXTO DO GRÁFICO
+========================================= */
+.grafico-card p{
+    color: #666;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   TAMANHO DO GRÁFICO
+========================================= */
+.grafico-card canvas{
+    max-height: 350px;
+}
+
+/* =========================================
+   DEIXAR SEMPRE NO FINAL DO CSS
+/* =========================================
+   RESPONSIVIDADE GERAL DO SITE
+========================================= */
+
+/* Impede que imagens estourem a tela */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Telas médias: tablets */
+@media(max-width: 900px){
+
+    /* Ajusta o topo */
+    .topo{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* Centraliza o menu */
+    .menu ul{
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Diminui a logo */
+    .logo{
+        width: 150px;
+    }
+
+    /* Ajusta seções principais */
+    .cadastro,
+    .area-login,
+    .relatorio,
+    .conteudo-home{
+        padding: 40px 5%;
+    }
+
+    /* Deixa caixas lado a lado virarem coluna */
+    .caixa-login,
+    .cadastro-loja-home,
+    .cards-resumo,
+    .cards-home,
+    .cards-planos-home,
+    .passos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajusta textos grandes */
+    h1,
+    .texto-login h1,
+    .texto-cadastro h1,
+    .titulo-relatorio h1{
+        font-size: 38px;
+    }
+}
+
+
+/* Telas pequenas: celular */
+@media(max-width: 600px){
+
+    /* Evita barra lateral */
+    body{
+        overflow-x: hidden;
+    }
+
+    /* Menu em coluna */
+    .menu ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Links do menu menores */
+    .menu a{
+        font-size: 15px;
+    }
+
+    /* Logo menor */
+    .logo{
+        width: 130px;
+    }
+
+    /* Reduz espaçamentos */
+    section,
+    main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Títulos menores */
+    h1,
+    .texto-login h1,
+    .texto-cadastro h1,
+    .titulo-relatorio h1{
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    /* Parágrafos mais confortáveis */
+    p{
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* Formulários ocupam a tela */
+    .formulario,
+    .form-login,
+    .caixa-login,
+    .grafico-card{
+        width: 100%;
+        padding: 25px;
+    }
+
+    /* Botões ocupam largura total */
+    button,
+    .botao-login,
+    .botao-cadastro,
+    .botao-cadastro-home{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Cards ficam um abaixo do outro */
+    .card-resumo,
+    .card-home,
+    .card-plano-home{
+        width: 100%;
+    }
+
+    /* Ajusta filtro do relatório */
+    .filtro-relatorio{
+        flex-direction: column;
+    }
+
+    .filtro-relatorio select,
+    .filtro-relatorio button{
+        width: 100%;
+    }
+
+    /* Gráficos não deformam */
+    .grafico-card canvas{
+        max-width: 100%;
+        max-height: 300px;
+    }
+}
+
+
+/* Telas muito pequenas */
+@media(max-width: 400px){
+
+    /* Títulos ainda menores */
+    h1,
+    .texto-login h1,
+    .texto-cadastro h1,
+    .titulo-relatorio h1{
+        font-size: 28px;
+    }
+
+    /* Diminui padding das caixas */
+    .formulario,
+    .form-login,
+    .grafico-card,
+    .card-resumo{
+        padding: 20px;
+    }
 }

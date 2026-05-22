@@ -1,0 +1,276 @@
+<!--
+Alunas: Maria Cecília, Giovana Azevedo, Mariana Fuchs
+Projeto: PinkShelf
+Página de Cadastro
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>Cadastro | PinkShelf</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+    <header class="topo">
+
+        <!-- LOGO -->
+        <a href="../index.html">
+            <img src="../images/img00.png.png"
+                alt="Logo PinkShelf"
+                class="logo">
+        </a>
+
+        <!-- MENU -->
+        <nav class="menu">
+
+            <ul>
+
+                <li><a href="../index.html">Início</a></li>
+
+                <li><a href="estoque.html">Estoque</a></li>
+
+                <li><a href="nossosplanos.html">Nossos Planos</a></li>
+
+                <li><a href="cadastro.html">Cadastro</a></li>
+
+                <li><a href="localizacao.html">Localização</a></li>
+
+                <li><a href="suporte.html">Suporte</a></li>
+
+                <li><a href="relatorio.html">Relatório</a></li>
+
+                <li><a href="sobre.html">Sobre</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================
+         ÁREA DE CADASTRO
+    ========================================== -->
+    <section class="cadastro">
+
+        <!-- TEXTO -->
+        <div class="texto-cadastro">
+
+            <h1>Crie sua conta</h1>
+
+            <p>
+                Cadastre sua loja e tenha acesso ao sistema PinkShelf
+                para controlar seu estoque de forma prática e moderna.
+            </p>
+
+            <img src="../images/img3.png"
+                alt="Sistema PinkShelf">
+
+        </div>
+
+
+        <!-- FORMULÁRIO -->
+        <div class="formulario">
+
+            <form>
+
+                <!-- TÍTULO -->
+                <h2>Cadastro da Loja</h2>
+
+
+                <!-- NOME DA LOJA -->
+                <div class="campo">
+
+                    <label for="loja">
+                        Nome da loja
+                    </label>
+
+                    <input type="text"
+                        id="loja"
+                        placeholder="Ex: Pink Store">
+
+                </div>
+
+
+                <!-- RESPONSÁVEL -->
+                <div class="campo">
+
+                    <label for="responsavel">
+                        Responsável
+                    </label>
+
+                    <input type="text"
+                        id="responsavel"
+                        placeholder="Ex: Joana Silva">
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="campo">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input type="email"
+                        id="email"
+                        placeholder="Ex: contato@email.com">
+
+                </div>
+
+
+                <!-- TELEFONE -->
+                <div class="campo">
+
+                    <label for="telefone">
+                        Telefone
+                    </label>
+
+                    <input type="tel"
+                        id="telefone"
+                        placeholder="(31) 99999-9999">
+
+                </div>
+
+
+                <!-- PLANO -->
+                <div class="campo">
+
+                    <label for="plano">
+                        Plano desejado
+                    </label>
+
+                    <select id="plano">
+
+                        <option>
+                            Selecione um plano
+                        </option>
+
+                        <option>
+                            Plano Básico
+                        </option>
+
+                        <option>
+                            Plano Premium
+                        </option>
+
+                        <option>
+                            Plano Pink Elite
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- PAGAMENTO -->
+                <div class="campo">
+
+                    <label for="pagamento">
+                        Forma de pagamento
+                    </label>
+
+                    <select id="pagamento">
+
+                        <option>
+                            Selecione a forma de pagamento
+                        </option>
+
+                        <option>
+                            Pix
+                        </option>
+
+                        <option>
+                            Cartão de crédito
+                        </option>
+
+                        <option>
+                            Boleto
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- SENHA -->
+                <div class="campo">
+
+                    <label for="senha">
+                        Criar senha
+                    </label>
+
+                    <input type="password"
+                        id="senha"
+                        placeholder="Digite sua senha">
+
+                </div>
+
+
+                <!-- CONFIRMAR SENHA -->
+                <div class="campo">
+
+                    <label for="confirmar">
+                        Confirmar senha
+                    </label>
+
+                    <input type="password"
+                        id="confirmar"
+                        placeholder="Confirme sua senha">
+
+                </div>
+
+
+                <!-- BOTÃO -->
+                <button type="submit"
+                    class="botao-cadastro">
+
+                    Criar conta
+
+                </button>
+
+
+                <!-- LOGIN -->
+                <div class="login">
+
+                    <p>
+                        Já possui cadastro?
+                    </p>
+
+                    <a href="login.html">
+                        Entrar no sistema
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

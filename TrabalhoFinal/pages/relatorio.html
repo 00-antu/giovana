@@ -1,222 +1,211 @@
+<!-- Página Relatório - PinkShelf -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório | PinkShelf</title>
 
-    <title>Relatório Mensal | PinkShelf</title>
-
-    <!-- CSS PRINCIPAL DO SITE -->
     <link rel="stylesheet" href="../css/estilo.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-<header class="topo">
 
-        <!-- LOGO -->
+    <!-- MENU -->
+    <header class="topo">
 
-        <div class="logo-topo">
-            <img src="../images/img00.png.png" alt="Logo PinkShelf">
-        </div>
+        <a href="../index.html">
+            <img src="../images/img00.png.png" alt="Logo PinkShelf" class="logo">
+        </a>
 
-        <!-- MENU -->
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="estoque.html">Estoque</a></li>
+                <li><a href="nossosplanos.html">Nossos Planos</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="localizacao.html">Localização</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+                <li><a href="relatorio.html">Relatório</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
 
-        <header class="menu-paginas">
+    </header>
 
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="estoque.html">Estoque</a></li>
-                    <li><a href="nossosplanos.html">Nossos Planos</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="localizacao.html">Localização</a></li>
-                    <li><a href="suporte.html">Suporte</a></li>
-                    <li><a href="relatorio.html">Relatório</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                </ul>
-            </nav>
 
-        </header>
-    <!-- CONTEÚDO PRINCIPAL DA PÁGINA DE RELATÓRIO -->
-    <main class="relatorio-mensal">
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="relatorio">
 
-        <!-- TÍTULO DA PÁGINA -->
+        <!-- TÍTULO -->
         <section class="titulo-relatorio">
-            <h1>Gerador de Relatório Mensal</h1>
+            <h1>Relatório do mês</h1>
 
             <p>
-                Informe os dados do seu cadastro, selecione o plano contratado
-                e escolha o mês desejado para gerar o relatório do estoque.
+                Visualize os principais resultados da sua loja, acompanhe as vendas,
+                controle o estoque e veja quais categorias tiveram melhor desempenho.
             </p>
         </section>
 
 
-        <!-- FORMULÁRIO PARA GERAR O RELATÓRIO -->
-        <section class="area-formulario-relatorio">
+        <!-- FILTRO DO RELATÓRIO -->
+        <section class="filtro-relatorio">
 
-            <h2>Dados para emissão do relatório</h2>
+            <select>
+                <option>Janeiro</option>
+                <option>Fevereiro</option>
+                <option>Março</option>
+                <option>Abril</option>
+                <option>Maio</option>
+                <option>Junho</option>
+                <option>Julho</option>
+                <option>Agosto</option>
+                <option>Setembro</option>
+                <option>Outubro</option>
+                <option>Novembro</option>
+                <option>Dezembro</option>
+            </select>
 
-            <form class="formulario-relatorio">
+            <select>
+                <option>2026</option>
+                <option>2025</option>
+                <option>2024</option>
+            </select>
 
-                <!-- CAMPO NOME DA LOJA -->
-                <div class="campo-relatorio">
-                    <label for="loja">Nome da loja</label>
-                    <input type="text" id="loja" placeholder="Ex: Pink Store">
-                </div>
-
-
-                <!-- CAMPO RESPONSÁVEL -->
-                <div class="campo-relatorio">
-                    <label for="responsavel">Responsável</label>
-                    <input type="text" id="responsavel" placeholder="Ex: Maria Cecília">
-                </div>
-
-
-                <!-- CAMPO E-MAIL -->
-                <div class="campo-relatorio">
-                    <label for="email">E-mail cadastrado</label>
-                    <input type="email" id="email" placeholder="Ex: contato@email.com">
-                </div>
-
-
-                <!-- SELEÇÃO DO PLANO -->
-                <div class="campo-relatorio">
-                    <label for="plano">Plano contratado</label>
-
-                    <select id="plano">
-                        <option value="">Selecione o plano</option>
-                        <option value="basico">Plano Básico</option>
-                        <option value="premium">Plano Premium</option>
-                        <option value="enterprise">Plano Enterprise</option>
-                    </select>
-                </div>
-
-
-                <!-- SELEÇÃO DO MÊS -->
-                <div class="campo-relatorio">
-                    <label for="mes">Mês do relatório</label>
-
-                    <select id="mes">
-                        <option value="">Selecione o mês</option>
-                        <option>Janeiro</option>
-                        <option>Fevereiro</option>
-                        <option>Março</option>
-                        <option>Abril</option>
-                        <option>Maio</option>
-                        <option>Junho</option>
-                        <option>Julho</option>
-                        <option>Agosto</option>
-                        <option>Setembro</option>
-                        <option>Outubro</option>
-                        <option>Novembro</option>
-                        <option>Dezembro</option>
-                    </select>
-                </div>
-
-
-                <!-- BOTÃO PARA GERAR RELATÓRIO -->
-                <button type="button" class="botao-gerar">
-                    Gerar relatório
-                </button>
-
-            </form>
+            <button type="button">Gerar relatório</button>
 
         </section>
 
 
-        <!-- ÁREA QUE MOSTRA O QUE CADA PLANO ENTREGA -->
-        <section class="planos-relatorio">
+        <!-- CARDS DE RESUMO -->
+        <section class="cards-resumo">
 
-            <h2>Tipos de relatório disponíveis</h2>
+            <div class="card-resumo">
+                <h3>Total de vendas</h3>
+                <p>128</p>
+                <span>vendas realizadas</span>
+            </div>
 
-            <div class="cards-planos-relatorio">
+            <div class="card-resumo">
+                <h3>Peças em estoque</h3>
+                <p>342</p>
+                <span>produtos cadastrados</span>
+            </div>
 
-                <!-- PLANO BÁSICO -->
-                <div class="card-plano-relatorio basico">
-                    <h3>Plano Básico</h3>
+            <div class="card-resumo">
+                <h3>Lucro estimado</h3>
+                <p>R$ 8.450</p>
+                <span>resultado mensal</span>
+            </div>
 
-                    <p>
-                        Relatório simples para acompanhar as principais informações
-                        do estoque.
-                    </p>
-
-                    <ul>
-                        <li>Total de peças vendidas</li>
-                        <li>Peça mais vendida</li>
-                        <li>Total vendido no mês</li>
-                    </ul>
-                </div>
-
-
-                <!-- PLANO PREMIUM -->
-                <div class="card-plano-relatorio premium">
-                    <h3>Plano Premium</h3>
-
-                    <p>
-                        Relatório mais completo para analisar melhor as vendas
-                        e o comportamento do estoque.
-                    </p>
-
-                    <ul>
-                        <li>Tudo do plano básico</li>
-                        <li>Dia com mais vendas</li>
-                        <li>Categoria mais vendida</li>
-                        <li>Ticket médio</li>
-                    </ul>
-                </div>
-
-
-                <!-- PLANO ENTERPRISE -->
-                <div class="card-plano-relatorio enterprise">
-                    <h3>Plano Pink Elite</h3>
-
-                    <p>
-                        Relatório avançado para empresas que precisam de uma análise
-                        mais detalhada.
-                    </p>
-
-                    <ul>
-                        <li>Tudo do plano premium</li>
-                        <li>Comparação entre meses</li>
-                        <li>Produtos com baixa saída</li>
-                        <li>Previsão de reposição</li>
-                        <li>Gráficos de desempenho</li>
-                    </ul>
-                </div>
-
+            <div class="card-resumo">
+                <h3>Mais vendido</h3>
+                <p>Vestido</p>
+                <span>categoria destaque</span>
             </div>
 
         </section>
 
 
-        <!-- PRÉVIA DO RELATÓRIO GERADO -->
-        <section class="previa-relatorio">
+        <!-- GRÁFICOS -->
+        <section class="area-graficos">
 
-            <h2>Prévia do relatório</h2>
+            <div class="grafico-card">
+                <h2>Vendas mensais</h2>
+                <p>Comparação das vendas realizadas nos últimos meses.</p>
+                <canvas id="graficoVendas"></canvas>
+            </div>
 
-            <p>
-                Após preencher os dados e clicar em gerar relatório, o sistema exibirá
-                as informações correspondentes ao plano escolhido e ao mês selecionado.
-            </p>
+            <div class="grafico-card">
+                <h2>Categorias mais vendidas</h2>
+                <p>Distribuição das categorias com melhor desempenho na loja.</p>
+                <canvas id="graficoCategorias"></canvas>
+            </div>
 
-            <div class="caixa-previa-relatorio">
-
-                <h3>Relatório ainda não gerado</h3>
-
-                <p>
-                    Preencha o formulário acima para visualizar os resultados do relatório mensal.
-                </p>
-
+            <div class="grafico-card">
+                <h2>Estoque atual</h2>
+                <p>Quantidade de peças disponíveis por categoria.</p>
+                <canvas id="graficoEstoque"></canvas>
             </div>
 
         </section>
-
-
-        <!-- RODAPÉ DA PÁGINA -->
-        <footer>
-            <p>© 2026 - PinkShelf | Sistema de Controle de Estoque</p>
-        </footer>
 
     </main>
 
+
+    <!-- JAVASCRIPT DOS GRÁFICOS -->
+    <script>
+
+        /* Gráfico de vendas mensais */
+        const vendas = document.getElementById("graficoVendas");
+
+        new Chart(vendas, {
+            type: "bar",
+
+            data: {
+                labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"],
+
+                datasets: [{
+                    label: "Vendas",
+                    data: [30, 45, 38, 60, 75, 90],
+                    backgroundColor: "#ff8fbd"
+                }]
+            }
+        });
+
+
+        /* Gráfico de categorias mais vendidas */
+        const categorias = document.getElementById("graficoCategorias");
+
+        new Chart(categorias, {
+            type: "pie",
+
+            data: {
+                labels: ["Vestidos", "Blusas", "Calças", "Saias", "Croppeds"],
+
+                datasets: [{
+                    label: "Categorias",
+                    data: [40, 25, 18, 10, 7],
+                    backgroundColor: [
+                        "#ff8fbd",
+                        "#ffc1d9",
+                        "#d94f8f",
+                        "#ffe1ec",
+                        "#f7a7c8"
+                    ]
+                }]
+            }
+        });
+
+
+        /* Gráfico de estoque atual */
+        const estoque = document.getElementById("graficoEstoque");
+
+        new Chart(estoque, {
+            type: "line",
+
+            data: {
+                labels: ["Vestidos", "Blusas", "Calças", "Saias", "Croppeds"],
+
+                datasets: [{
+                    label: "Quantidade em estoque",
+                    data: [50, 80, 45, 30, 60],
+                    borderColor: "#d94f8f",
+                    backgroundColor: "#ffd6e5",
+                    tension: 0.4,
+                    fill: true
+                }]
+            }
+        });
+
+    </script>
+
 </body>
+
 </html>
