@@ -3308,7 +3308,122 @@ body{
 .grafico-card canvas{
     max-height: 350px;
 }
+/* ==============================
+   PÁGINA CADASTRO DE PEÇAS
+============================== */
 
+.cadastro-pecas {
+    width: 90%;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(201, 79, 124, 0.2);
+}
+
+/* Título da página */
+.titulo-pecas {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo-pecas h1 {
+    font-family: 'Pacifico', cursive;
+    color: #c94f7c;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.titulo-pecas p {
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Caixa do formulário */
+.formulario-pecas {
+    width: 100%;
+}
+
+/* Formulário em grade */
+#formPeca {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+/* Cada campo */
+#formPeca .campo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nome dos campos */
+#formPeca label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #a83d65;
+    margin-bottom: 8px;
+}
+
+/* Inputs e selects */
+#formPeca input,
+#formPeca select {
+    padding: 13px;
+    border: 2px solid #f3b6cf;
+    border-radius: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    outline: none;
+    background-color: #fff8fb;
+}
+
+/* Quando clicar no campo */
+#formPeca input:focus,
+#formPeca select:focus {
+    border-color: #c94f7c;
+    background-color: #fff;
+}
+
+/* Botão salvar */
+#formPeca .botao-cadastro {
+    grid-column: 1 / 3;
+    padding: 14px;
+    border: none;
+    border-radius: 18px;
+    background-color: #c94f7c;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Efeito no botão */
+#formPeca .botao-cadastro:hover {
+    background-color: #a83d65;
+}
+
+/* Responsividade para celular */
+@media (max-width: 700px) {
+    #formPeca {
+        grid-template-columns: 1fr;
+    }
+
+    #formPeca .botao-cadastro {
+        grid-column: 1;
+    }
+
+    .cadastro-pecas {
+        margin: 40px auto;
+        padding: 25px;
+    }
+
+    .titulo-pecas h1 {
+        font-size: 32px;
+    }
+}
 /* =========================================
    DEIXAR SEMPRE NO FINAL DO CSS
 /* =========================================

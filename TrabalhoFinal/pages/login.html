@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,8 +8,7 @@
     ========================================== -->
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <title>Login | PinkShelf</title>
 
@@ -25,12 +22,9 @@
     <!-- =========================================
          FONTES
     ========================================== -->
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap"
         rel="stylesheet">
@@ -48,9 +42,7 @@
         <!-- LOGO -->
         <a href="../index.html">
 
-            <img src="../images/img00.png.png"
-                alt="Logo PinkShelf"
-                class="logo">
+            <img src="../images/img00.png.png" alt="Logo PinkShelf" class="logo">
 
         </a>
 
@@ -145,8 +137,7 @@
 
 
                 <!-- IMAGEM -->
-                <img src="../images/img3.png"
-                    alt="Sistema PinkShelf">
+                <img src="../images/img3.png" alt="Sistema PinkShelf">
 
             </div>
 
@@ -155,8 +146,7 @@
             <!-- =========================================
                  FORMULÁRIO
             ========================================== -->
-            <form class="form-login">
-
+            <form class="form-login" id="formLogin">
 
                 <!-- TÍTULO -->
                 <h2>
@@ -173,9 +163,7 @@
                         E-mail cadastrado
                     </label>
 
-                    <input type="email"
-                        id="email"
-                        placeholder="Digite o e-mail da loja">
+                    <input type="email" id="emailLogin" placeholder="Digite o e-mail da loja" required>
 
                 </div>
 
@@ -190,10 +178,7 @@
                         Senha
                     </label>
 
-                    <input type="password"
-                        id="senha"
-                        placeholder="Digite sua senha">
-
+                    <input type="password" id="senhaLogin" placeholder="Digite sua senha" required>
                 </div>
 
 
@@ -225,8 +210,7 @@
                 <!-- =========================================
                      BOTÃO ENTRAR
                 ========================================== -->
-                <button type="button"
-                    class="botao-login">
+                <button type="submit" class="botao-login">
 
                     Entrar no sistema
 
@@ -256,6 +240,45 @@
         </section>
 
     </main>
+
+
+    <script>
+
+        const formLogin = document.getElementById("formLogin");
+
+        formLogin.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const emailLogin =
+                document.getElementById("emailLogin").value;
+
+            const senhaLogin =
+                document.getElementById("senhaLogin").value;
+
+            const emailSalvo =
+                localStorage.getItem("emailCadastro");
+
+            const senhaSalva =
+                localStorage.getItem("senhaCadastro");
+
+            if (
+                emailLogin === emailSalvo &&
+                senhaLogin === senhaSalva
+            ) {
+
+                window.location.href = "relatorio.html";
+
+            } else {
+
+                alert("E-mail ou senha incorretos.");
+
+            }
+
+        });
+
+    </script>
+
 
 </body>
 

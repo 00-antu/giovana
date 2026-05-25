@@ -10,8 +10,7 @@ Página de Cadastro
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <title>Cadastro | PinkShelf</title>
 
@@ -36,9 +35,7 @@ Página de Cadastro
 
         <!-- LOGO -->
         <a href="../index.html">
-            <img src="../images/img00.png.png"
-                alt="Logo PinkShelf"
-                class="logo">
+            <img src="../images/img00.png.png" alt="Logo PinkShelf" class="logo">
         </a>
 
         <!-- MENU -->
@@ -84,8 +81,7 @@ Página de Cadastro
                 para controlar seu estoque de forma prática e moderna.
             </p>
 
-            <img src="../images/img3.png"
-                alt="Sistema PinkShelf">
+            <img src="../images/img3.png" alt="Sistema PinkShelf">
 
         </div>
 
@@ -93,8 +89,7 @@ Página de Cadastro
         <!-- FORMULÁRIO -->
         <div class="formulario">
 
-            <form>
-
+            <form id="formCadastro">
                 <!-- TÍTULO -->
                 <h2>Cadastro da Loja</h2>
 
@@ -106,9 +101,7 @@ Página de Cadastro
                         Nome da loja
                     </label>
 
-                    <input type="text"
-                        id="loja"
-                        placeholder="Ex: Pink Store">
+                    <input type="text" id="loja" placeholder="Ex: Pink Store">
 
                 </div>
 
@@ -120,9 +113,7 @@ Página de Cadastro
                         Responsável
                     </label>
 
-                    <input type="text"
-                        id="responsavel"
-                        placeholder="Ex: Joana Silva">
+                    <input type="text" id="responsavel" placeholder="Ex: Joana Silva">
 
                 </div>
 
@@ -134,9 +125,7 @@ Página de Cadastro
                         E-mail
                     </label>
 
-                    <input type="email"
-                        id="email"
-                        placeholder="Ex: contato@email.com">
+                    <input type="email" id="email" placeholder="Ex: contato@email.com" required>
 
                 </div>
 
@@ -148,9 +137,7 @@ Página de Cadastro
                         Telefone
                     </label>
 
-                    <input type="tel"
-                        id="telefone"
-                        placeholder="(31) 99999-9999">
+                    <input type="tel" id="telefone" placeholder="(31) 99999-9999">
 
                 </div>
 
@@ -222,10 +209,7 @@ Página de Cadastro
                         Criar senha
                     </label>
 
-                    <input type="password"
-                        id="senha"
-                        placeholder="Digite sua senha">
-
+                    <input type="password" id="senha" placeholder="Digite sua senha" required>
                 </div>
 
 
@@ -236,16 +220,13 @@ Página de Cadastro
                         Confirmar senha
                     </label>
 
-                    <input type="password"
-                        id="confirmar"
-                        placeholder="Confirme sua senha">
+                    <input type="password" id="confirmar" placeholder="Confirme sua senha">
 
                 </div>
 
 
                 <!-- BOTÃO -->
-                <button type="submit"
-                    class="botao-cadastro">
+                <button type="submit" class="botao-cadastro">
 
                     Criar conta
 
@@ -270,7 +251,21 @@ Página de Cadastro
         </div>
 
     </section>
+    <script>
+        const formCadastro = document.getElementById("formCadastro");
 
+        formCadastro.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            localStorage.setItem("emailCadastro", email);
+            localStorage.setItem("senhaCadastro", senha);
+
+            window.location.href = "cadastro-pecas.html";
+        });
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
+
+    <title>Cadastro de Peças | PinkShelf</title>
+
+    <link rel="stylesheet"
+        href="../css/estilo.css">
+
+</head>
+
+<body>
+
+     <!--MENU-->
+    <header class="topo">
+        <img src="../images/img00.png.png" alt="Pinkshelf" class="logo">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pages/estoque.html">Estoque</a></li>
+                <li><a href="pages/nossosplanos.html">Nossos Planos</a></li>
+                <li><a href="pages/cadastro.html">Cadastro</a></li>
+                <li><a href="pages/localizacao.html">Localização</a></li>
+                <li><a href="pages/suporte.html">Suportes</a></li>
+                <li><a href="pages/relatorio.html">Relatório</a></li>
+                <li><a href="pages/sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cadastro-pecas">
+
+        <div class="titulo-pecas">
+
+            <h1>Cadastro de peças</h1>
+
+            <p>
+                Cadastre as peças da sua loja para gerar relatórios.
+            </p>
+
+        </div>
+
+        <div class="formulario-pecas">
+
+            <form id="formPeca">
+
+                <!-- NOME -->
+                <div class="campo">
+
+                    <label>
+                        Nome da peça
+                    </label>
+
+                    <input type="text"
+                        id="nomePeca"
+                        required>
+
+                </div>
+
+
+                <!-- CATEGORIA -->
+                <div class="campo">
+
+                    <label>
+                        Categoria
+                    </label>
+
+                    <select id="categoriaPeca" required>
+
+                        <option value="">
+                            Selecione
+                        </option>
+
+                        <option>
+                            Blusa
+                        </option>
+
+                        <option>
+                            Calça
+                        </option>
+
+                        <option>
+                            Vestido
+                        </option>
+
+                        <option>
+                            Saia
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- TAMANHO -->
+                <div class="campo">
+
+                    <label>
+                        Tamanho
+                    </label>
+
+                    <input type="text"
+                        id="tamanhoPeca"
+                        required>
+
+                </div>
+
+
+                <!-- COR -->
+                <div class="campo">
+
+                    <label>
+                        Cor
+                    </label>
+
+                    <input type="text"
+                        id="corPeca"
+                        required>
+
+                </div>
+
+
+                <!-- QUANTIDADE -->
+                <div class="campo">
+
+                    <label>
+                        Quantidade
+                    </label>
+
+                    <input type="number"
+                        id="quantidadePeca"
+                        required>
+
+                </div>
+
+
+                <!-- PREÇO -->
+                <div class="campo">
+
+                    <label>
+                        Preço
+                    </label>
+
+                    <input type="number"
+                        id="precoPeca"
+                        step="0.01"
+                        required>
+
+                </div>
+
+
+                <!-- MÊS -->
+                <div class="campo">
+
+                    <label>
+                        Mês
+                    </label>
+
+                    <select id="mesPeca" required>
+
+                        <option value="">
+                            Selecione
+                        </option>
+
+                        <option>
+                            Janeiro
+                        </option>
+
+                        <option>
+                            Fevereiro
+                        </option>
+
+                        <option>
+                            Março
+                        </option>
+
+                        <option>
+                            Abril
+                        </option>
+                        
+                        <option>
+                            Maio
+                        </option>
+
+                        <option>
+                            Junho
+                        </option>
+
+                        <option>
+                            Julho
+                        </option>
+
+                        <option>
+                            Agosto
+                        </option>
+
+                        <option>
+                            Setembro
+                        </option>
+
+                        <option>
+                            Outubro
+                        </option>
+
+                        <option>
+                            Novembro
+                        </option>
+
+                        <option>
+                            Dezembro
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- BOTÃO -->
+                <button type="submit"
+                    class="botao-cadastro">
+
+                    Salvar peça
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <script>
+
+        const formPeca =
+            document.getElementById("formPeca");
+
+        formPeca.addEventListener("submit",
+            function(event) {
+
+            event.preventDefault();
+
+            const peca = {
+
+                nome:
+                document.getElementById("nomePeca").value,
+
+                categoria:
+                document.getElementById("categoriaPeca").value,
+
+                tamanho:
+                document.getElementById("tamanhoPeca").value,
+
+                cor:
+                document.getElementById("corPeca").value,
+
+                quantidade:
+                Number(document.getElementById("quantidadePeca").value),
+
+                preco:
+                Number(document.getElementById("precoPeca").value),
+
+                mes:
+                document.getElementById("mesPeca").value
+
+            };
+
+            let pecas =
+                JSON.parse(localStorage.getItem("pecas")) || [];
+
+            pecas.push(peca);
+
+            localStorage.setItem(
+                "pecas",
+                JSON.stringify(pecas)
+            );
+
+            alert("Peça cadastrada com sucesso!");
+
+            formPeca.reset();
+
+        });
+
+    </script>
+
+</body>
+
+</html>
