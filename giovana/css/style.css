@@ -1,0 +1,58 @@
+* MODAL */
+ 
+.modal{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.95);
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+ 
+.modal img{
+max-width:90%;
+max-height:90%;
+border-radius:10px;
+}
+ 
+/* CORAÇÕES */
+ 
+.heart{
+position:fixed;
+top:-20px;
+font-size:22px;
+animation:fall linear forwards;
+pointer-events:none;
+z-index:9999;
+}
+ 
+@keyframes fall{
+to{
+transform:translateY(110vh);
+}
+}
+ 
+@media(max-width:768px){
+ 
+.hero h1{
+font-size:3rem;
+}
+ 
+.preview img{
+width:250px;
+height:330px;
+}
+ 
+.music h2,
+.together h2,
+.countdown h2,
+.gallery h2{
+font-size:2.2rem;
+}
+ 
+.letter{
+padding:30px;
+}
+ 
+}
